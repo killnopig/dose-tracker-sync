@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>注射與體重記錄 同步版</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="theme-color" content="#1e8dfe">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#eef2f5;--card:#fff;--tx:#14212b;--mu:#5d6b78;--ln:#d5dde4;--dose:#0e7490;--wt:#c2410c;--btn:#14212b;--btnt:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1419;--card:#172028;--tx:#e6edf2;--mu:#8fa0ae;--ln:#26333d;--dose:#38bdf8;--wt:#fb923c;--btn:#e6edf2;--btnt:#0e1419}}
+:root[data-theme="dark"]{--bg:#0e1419;--card:#172028;--tx:#e6edf2;--mu:#8fa0ae;--ln:#26333d;--dose:#38bdf8;--wt:#fb923c;--btn:#e6edf2;--btnt:#0e1419}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 "Noto Sans TC",system-ui,-apple-system,sans-serif}
+main{max-width:520px;margin:0 auto;padding:16px 16px 88px}
+h1{font-size:20px;margin:4px 0 12px;font-weight:700}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.stat{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:12px}
+.stat b{display:block;font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--mu)}
+.wide{grid-column:1/-1}
+label{display:block;font-size:13px;color:var(--mu);margin:10px 0 4px}
+input,textarea,select{width:100%;font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--ln);border-radius:10px;padding:10px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+button{font:inherit;border:0;border-radius:10px;padding:12px 16px;background:var(--btn);color:var(--btnt);font-weight:600;width:100%;margin-top:14px}
+button.sec{background:transparent;color:var(--tx);border:1px solid var(--ln);margin-top:8px}
+button.x{width:auto;margin:0;padding:6px 10px;background:transparent;color:var(--mu);border:1px solid var(--ln);font-weight:400;font-size:13px}
+.item{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 0;border-top:1px solid var(--ln)}
+.item:first-child{border-top:0}
+.item small{color:var(--mu);display:block}
+.d{color:var(--dose);font-weight:600}.w{color:var(--wt);font-weight:600}
+.tabs{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabs button{margin:0;border-radius:0;background:transparent;color:var(--mu);padding:14px 0;flex:1}
+.tabs button.on{color:var(--tx);box-shadow:inset 0 3px 0 var(--dose)}
+.pane{display:none}.pane.on{display:block}
+.cv{position:relative;height:250px}
+.cv canvas{touch-action:pan-y}
+.note{font-size:13px;color:var(--mu)}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.seg button{margin:0;width:auto;padding:6px 12px;font-size:13px;background:transparent;color:var(--mu);border:1px solid var(--ln);font-weight:400}
+.seg button.on{color:var(--tx);border-color:var(--tx);font-weight:600}
+.empty{color:var(--mu);text-align:center;padding:18px 0}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.p{color:var(--c3);font-weight:600}.q{color:var(--c4);font-weight:600}
+:root{--c3:#7c3aed;--c4:#15803d}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c3:#a78bfa;--c4:#4ade80}}
+:root[data-theme="dark"]{--c3:#a78bfa;--c4:#4ade80}
+</style>
+</head>
+<body>
+<main>
+<div id="upd" class="card" style="display:none;cursor:pointer;text-align:center"><b>有新版本 <span id="nv"></span>，點此更新</b></div>
+<h1>注射與體重記錄 <span id="ver" class="note" style="font-weight:400;font-size:13px;margin-left:6px"></span></h1>
+<div class="note" id="betatag" style="display:none;margin:-6px 0 6px;color:var(--wt)">同步版：資料與 1.2 版分開儲存</div>
+<div class="note" id="sync" style="margin:-6px 0 10px;cursor:pointer">本機儲存</div>
+<div class="card" id="bk-rem" style="display:none;border-color:var(--wt)"><b>建議備份資料</b><div class="note" id="bk-rem-t" style="margin:4px 0 0"></div>
+  <div class="row"><button id="bk-go" style="margin-top:10px">立即備份</button><button id="bk-skip" class="sec" style="margin-top:10px">今天先不要</button></div></div>
+
+<section id="p-log" class="pane on">
+  <div class="stats">
+    <div class="stat" id="c-w"><b id="s-w">–</b><span>最新體重 (kg)</span></div>
+    <div class="stat" id="c-c"><b id="s-c">–</b><span>與第一筆相比 (kg)</span></div>
+    <div class="stat" id="c-d"><b id="s-d">–</b><span id="s-dl">最近一次劑量 (mg)</span></div>
+    <div class="stat" id="c-o"><b id="s-o">–</b><span>預估體內殘留 (mg)</span></div>
+    <div class="stat" id="c-b"><b id="s-b">–</b><span id="s-bs">BMI</span></div>
+    <div class="stat" id="c-t"><b id="s-t">–</b><span id="s-ts">距離目標 (kg)</span></div>
+    <div class="stat" id="c-bp"><b id="s-bp">–</b><span id="s-bps">最新血壓 (mmHg)</span></div>
+    <div class="stat" id="c-fat"><b id="s-fat">–</b><span>體脂率 (%)</span></div>
+    <div class="stat" id="c-mus"><b id="s-mus">–</b><span>骨骼肌率 (%)</span></div>
+    <div class="stat" id="c-vis"><b id="s-vis">–</b><span>內臟脂肪等級</span></div>
+    <div class="stat" id="c-bage"><b id="s-bage">–</b><span>身體年齡（歲）</span></div>
+    <div class="stat" id="c-bmr"><b id="s-bmr">–</b><span>基礎代謝 (kcal)</span></div>
+    <div class="stat wide" id="c-n"><b id="s-n" style="font-size:18px">–</b><span id="s-ns"></span></div>
+  </div>
+  <div class="card">
+    <label for="f-date">日期</label>
+    <input type="date" id="f-date">
+    <div class="row">
+      <div><label for="f-dose">注射劑量 (mg)</label><input type="number" id="f-dose" inputmode="decimal" step="0.1" min="0" placeholder="例如 2.5"></div>
+      <div><label for="f-wt">體重 (kg)</label><input type="number" id="f-wt" inputmode="decimal" step="0.1" min="0" placeholder="例如 72.4"></div>
+    </div>
+    <details id="f-more" style="margin-top:12px">
+      <summary style="cursor:pointer;color:var(--mu);font-size:14px">血壓與體組成（選填）</summary>
+      <label>血壓 (mmHg) 與脈搏</label>
+      <div class="row3">
+        <input type="number" id="f-sys" inputmode="numeric" min="0" placeholder="收縮壓" aria-label="收縮壓">
+        <input type="number" id="f-dia" inputmode="numeric" min="0" placeholder="舒張壓" aria-label="舒張壓">
+        <input type="number" id="f-pul" inputmode="numeric" min="0" placeholder="脈搏" aria-label="脈搏">
+      </div>
+      <label>體組成</label>
+      <div class="row3">
+        <input type="number" id="f-fat" inputmode="decimal" step="0.1" min="0" placeholder="體脂 %" aria-label="體脂率">
+        <input type="number" id="f-mus" inputmode="decimal" step="0.1" min="0" placeholder="骨骼肌 %" aria-label="骨骼肌率">
+        <input type="number" id="f-vis" inputmode="decimal" step="0.5" min="0" placeholder="內臟脂肪" aria-label="內臟脂肪等級">
+      </div>
+      <label>身體年齡（歲）與基礎代謝（kcal）</label>
+      <div class="row3">
+        <input type="number" id="f-bage" inputmode="numeric" min="0" placeholder="身體年齡" aria-label="身體年齡">
+        <input type="number" id="f-bmr" inputmode="numeric" min="0" placeholder="基礎代謝" aria-label="基礎代謝">
+      </div>
+    </details>
+    <label for="f-site">注射部位（有填劑量時記錄）</label>
+    <select id="f-site"></select>
+    <label for="f-note">備註（選填）</label>
+    <input type="text" id="f-note" placeholder="例如 左腹、輕微噁心">
+    <button id="add">儲存記錄</button>
+    <button id="cancel-edit" class="sec" style="display:none">取消編輯</button>
+    <div class="note" id="msg" style="margin-top:8px"></div>
+  </div>
+  <div class="card" id="list-ctl"><b>記錄列表</b>
+    <div class="seg" id="seg-lsort"></div>
+    <div class="seg" id="seg-ltype"></div>
+    <select id="l-mon" aria-label="月份"></select>
+    <div class="note" id="l-cnt" style="margin-top:8px"></div>
+  </div>
+  <div class="card" id="list"></div>
+</section>
+
+<section id="p-chart" class="pane">
+  <div class="card" id="exp-card">
+    <button id="exp-btn" style="margin-top:0">產生圖表截圖（給 AI 分析）</button>
+    <button id="sum-btn" class="sec">複製數據摘要（文字）</button>
+    <label style="display:flex;gap:8px;align-items:center;margin:8px 0 0;color:var(--mu)"><input type="checkbox" id="sum-prompt" checked style="width:auto">開頭加入給 AI 的分析提示</label>
+    <textarea id="sum-text" readonly rows="8" style="display:none;margin-top:8px"></textarea>
+    <div class="note" id="exp-msg" style="margin-top:8px">把目前所有圖表合成一張高解析度圖片，淺色底、不受深色模式影響。圖片包含你的健康數據，傳給 AI 服務前請自行評估隱私。</div>
+    <div id="exp-out" style="display:none">
+      <img id="exp-img" alt="圖表截圖" style="width:100%;border-radius:8px;margin-top:10px;background:#fff">
+      <button id="exp-share" class="sec">分享或儲存圖片</button>
+      <button id="exp-dl" class="sec">下載 PNG</button>
+      <button id="exp-copy" class="sec">複製圖片</button>
+    </div>
+  </div>
+  <div class="card" id="range-card"><b>圖表範圍</b><div class="seg" id="seg-range"></div><div class="note">只影響圖表與截圖，不會刪除任何記錄。</div></div>
+  <div class="empty" id="chart-empty">還沒有可畫圖的資料。</div>
+  <div class="card" id="card-w"><b>體重</b><div class="cv"><canvas id="cv-w"></canvas></div></div>
+  <div class="card" id="card-d"><b>劑量與預估體內殘留</b><div class="cv"><canvas id="cv-d"></canvas></div>
+  <p class="note">殘留量依半衰期以指數衰減估算，假設注射後立即吸收，僅供趨勢參考，不是醫療建議。</p></div>
+  <div class="card" id="card-bp"><b>血壓與脈搏</b><div class="seg" id="seg-bp"></div><div class="cv"><canvas id="cv-bp"></canvas></div><p class="note" id="bp-note"></p></div>
+  <div class="card" id="card-bmi"><b>BMI</b><div class="cv"><canvas id="cv-bmi"></canvas></div>
+  <p class="note">依「設定」中的身高計算。虛線為台灣成人標準的過重（24）與肥胖（27）界線。</p></div>
+  <div class="card" id="card-bm"><b>身體年齡與基礎代謝</b><div class="cv"><canvas id="cv-bm"></canvas></div></div>
+  <div class="card" id="card-bc"><b>體脂、骨骼肌與內臟脂肪</b><div class="cv"><canvas id="cv-bc"></canvas></div></div>
+</section>
+
+<section id="p-set" class="pane">
+  <div class="card">
+    <b>Google Drive 雲端備份</b>
+    <p class="note">登入你自己的 Google 帳號後，資料會備份到你 Drive 裡的隱藏應用程式資料夾，只有這個網頁能讀寫，作者看不到你的資料。</p>
+    <button id="gd-btn">連線 Google Drive</button>
+    <button id="gd-off" class="sec" style="display:none">中斷連線</button>
+    <label for="gd-src" style="margin-top:14px">從其他版本匯入資料</label>
+    <select id="gd-src"><option value="dose-tracker.json">1.2 版（正式版）</option><option value="dose-tracker-beta.json">舊測試版（1.9.x）</option></select>
+    <button id="gd-main" class="sec">匯入選取版本的資料</button>
+    <div class="note" id="gd-main-msg" style="display:none;margin-top:8px"></div>
+  </div>
+  <div class="card">
+    <div class="row">
+      <div><label for="h">身高 (cm)</label><input type="number" id="h" inputmode="decimal" min="50" max="250"></div>
+      <div><label for="tw">目標體重 (kg)</label><input type="number" id="tw" inputmode="decimal" min="20" step="0.1"></div>
+    </div>
+    <p class="note">用來計算 BMI（採台灣成人標準）並在體重圖上畫出目標線。</p>
+    <button id="save-prof">儲存身高與目標</button>
+  </div>
+  <div class="card">
+    <label for="hl">半衰期（小時）</label>
+    <input type="number" id="hl" inputmode="decimal" min="1">
+    <p class="note">Tirzepatide 約 120 小時，Semaglutide 約 160 小時。</p>
+    <button id="save-hl">儲存半衰期</button>
+  </div>
+  <div class="card">
+    <b>外觀與提醒</b>
+    <label for="theme">主題</label>
+    <select id="theme"><option value="auto">跟隨系統</option><option value="light">淺色</option><option value="dark">深色</option></select>
+    <label for="bkdays">備份提醒</label>
+    <select id="bkdays"><option value="0">不提醒</option><option value="3">超過 3 天沒備份</option><option value="7">超過 7 天沒備份</option><option value="14">超過 14 天沒備份</option><option value="30">超過 30 天沒備份</option></select>
+    <label for="askbk">修改記錄後</label>
+    <select id="askbk"><option value="1">詢問是否備份到 Google Drive</option><option value="0">不詢問</option></select>
+    <p class="note">備份提醒只有在這段時間內有新記錄、卻還沒備份時才會出現。已連線 Google Drive 且登入有效時，修改後會自動備份，不會再詢問。這些設定只存在這台裝置。</p>
+  </div>
+  <div class="card" id="omron-card">
+    <b>匯入 Omron CSV</b>
+    <p class="note">選擇 OMRON connect 匯出的血壓、體重、體組成 CSV，可一次選多個檔案，分開匯出的也能分開匯入。先預覽再確認，重複的資料不會重複加入，並保留一份可復原的備份。</p>
+    <input type="file" id="om-file" accept=".csv,.tsv,.txt,text/csv" multiple>
+    <div id="hc-box" style="display:none;margin-top:12px">
+      <b>從 Health Connect 同步（僅 Android APK）</b>
+      <select id="hc-days" style="margin-top:6px"><option value="30">最近 30 天</option><option value="90">最近 90 天</option><option value="365">最近 1 年（需歷史權限）</option></select>
+      <label style="display:flex;gap:8px;align-items:center;margin:8px 0 0;color:var(--mu)"><input type="checkbox" id="hc-all" style="width:auto">包含所有來源（預設只取 Omron）</label>
+      <button id="hc-btn" class="sec">授權並讀取 Health Connect</button>
+    </div>
+    <div class="note" id="hc-diag" style="display:none;margin-top:8px"></div>
+    <div class="note" id="om-sum" style="margin-top:8px;line-height:1.7"></div>
+    <button id="om-go" style="display:none">確認匯入</button>
+    <button id="om-undo" class="sec" style="display:none">復原上次匯入</button>
+    <div id="om-bk" class="card" style="display:none;margin:12px 0 0;border-color:var(--dose)">
+      <div id="om-bk-t" style="font-weight:600"></div>
+      <div class="row"><button id="om-bk-yes" style="margin-top:10px">備份到 Google Drive</button><button id="om-bk-no" class="sec" style="margin-top:10px">先不要</button></div>
+    </div>
+  </div>
+  <div class="card">
+    <b>備份與還原</b>
+    <p class="note">未連線 Google Drive 時，資料只存在這支手機的瀏覽器中，清除瀏覽資料或換手機會遺失。仍建議定期產生備份文字另存。</p>
+    <textarea id="bk" rows="5"></textarea>
+    <label for="bk-file">或選擇備份檔（.json 或 .txt）</label>
+    <input type="file" id="bk-file" accept=".json,.txt,application/json,text/plain">
+    <button id="exp" class="sec">產生備份文字</button>
+    <button id="imp" class="sec">從文字還原</button>
+    <div class="note" id="bmsg" style="margin-top:8px"></div>
+    <details style="margin-top:14px">
+      <summary style="cursor:pointer;font-weight:600">從其他 App 或 Excel 匯入</summary>
+      <div class="note" style="margin-top:10px;line-height:1.7">
+        <p>不同 App 的匯出格式都不一樣，建議請 AI 幫你轉成本 app 吃得進去的格式：</p>
+        <ol style="padding-left:20px">
+          <li>按「複製提示詞」。</li>
+          <li>貼到你慣用的 AI 對話，並把你的記錄（從 Excel 複製的表格、CSV 內容都可以）貼在提示詞最後面。</li>
+          <li>把 AI 回覆的內容複製起來，貼進上面的備份文字框，按「從文字還原」。</li>
+        </ol>
+        <p>注意：還原會取代目前所有資料。請先按「產生備份文字」另存一份；想保留現有記錄的話，把現有備份文字也一併貼給 AI，請它合併。</p>
+        <p>你的記錄會傳給你使用的 AI 服務，請自行評估是否適合。</p>
+      </div>
+      <textarea id="ai-prompt" readonly rows="6">請把我貼上的施打與體重記錄，轉換成下面格式的 JSON。只輸出 JSON，不要加任何說明文字。
+
+格式：
+{"entries":[{"date":"YYYY-MM-DD","dose":劑量數字,"wt":體重數字,"sys":收縮壓,"dia":舒張壓,"pul":脈搏,"fat":體脂率,"mus":骨骼肌率,"vis":內臟脂肪等級,"bage":身體年齡,"bmr":基礎代謝,"site":"部位","note":"備註"}],"hl":120,"h":0,"tw":0}
+
+規則：
+1. date 必須是 YYYY-MM-DD。如果我的資料沒有年份，或日期有歧義（例如 03/04 可能是 3 月 4 日或 4 月 3 日），請先問我，不要自己猜。
+2. dose 是注射劑量（mg），wt 是體重（kg），sys／dia／pul 是收縮壓／舒張壓（mmHg）／脈搏（次/分），fat／mus 是體脂率／骨骼肌率（%），vis 是內臟脂肪等級，bage 是身體年齡（歲），bmr 是基礎代謝（kcal）。同一次量測的數值放同一筆；沒有的項目一律填 0。
+3. 如果體重單位是磅（lb），請換算成公斤，四捨五入到小數 1 位。
+4. site 只能是這七個之一：左腹、腹中、右腹、左大腿、右大腿、左上臂、右上臂。沒有部位或對不上就填空字串 ""，並把原本的部位文字寫進 note。
+5. 依日期由舊到新排序。
+6. 資料裡沒有的內容不要編造。
+7. hl 是藥物半衰期（小時），不知道就填 120；h 是身高（cm）、tw 是目標體重（kg），不知道就填 0。
+
+以下是我的資料：
+（把你的記錄貼在這裡）</textarea>
+      <button id="ai-copy" class="sec">複製提示詞</button>
+    </details>
+  </div>
+</section>
+<details class="card" style="margin-top:16px">
+  <summary style="cursor:pointer;font-weight:600">關於本 app 與免責聲明</summary>
+  <div class="note" style="margin-top:10px;line-height:1.7">
+    <p>本 app 是個人記錄與趨勢檢視工具，不是醫療器材，也不提供診斷、治療或用藥建議。</p>
+    <p>「預估體內殘留」是依半衰期做的簡化指數衰減估算，假設注射後立即吸收，與實際血中濃度不同，不可用來決定劑量。BMI 分類和「建議注射部位、下次注射日」只是輔助提醒，請以醫師或藥師的指示和藥品介紹為準。</p>
+    <p>血壓、脈搏、體脂、骨骼肌與內臟脂肪數值只是記錄，不能用來診斷或判斷健康狀況；數值異常或感到不適時，請諮詢醫師。</p>
+    <p>用藥、調整劑量、漏打或出現不適症狀時，請詢問你的醫師或藥師；緊急狀況請立即就醫。</p>
+    <p>資料由使用者自行輸入，儲存在你的裝置瀏覽器；若你連線 Google Drive，也會備份在你自己的 Drive 中，作者無法存取。請自行定期備份，作者不保證資料不會遺失。</p>
+    <p>本 app 按現狀提供，不附任何保證，作者不對因使用或無法使用本 app 造成的任何後果負責。本 app 與任何藥廠或藥品品牌無關。</p>
+  </div>
+</details>
+</main>
+
+<div id="toast" role="status" aria-live="polite" style="display:none;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(70px + env(safe-area-inset-bottom,0px));background:var(--btn);color:var(--btnt);padding:10px 18px;border-radius:999px;font-weight:600;font-size:15px;z-index:30;box-shadow:0 4px 18px rgba(0,0,0,.35);max-width:90%;text-align:center"></div>
+<div id="bk-ask" class="card" style="display:none;position:fixed;left:12px;right:12px;bottom:calc(70px + env(safe-area-inset-bottom,0px));z-index:20;margin:0 auto;max-width:496px;box-shadow:0 4px 18px rgba(0,0,0,.35);border-color:var(--dose)">
+  <div id="bk-ask-t" style="font-weight:600"></div>
+  <div class="row"><button id="bk-ask-yes" style="margin-top:10px">連線並備份</button><button id="bk-ask-no" class="sec" style="margin-top:10px">先不要</button></div>
+</div>
+<nav class="tabs">
+  <button data-t="log" class="on">記錄</button>
+  <button data-t="chart">圖表</button>
+  <button data-t="set">設定</button>
+</nav>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const ENV='-sync';/* 同步版固定使用自己的儲存鍵與 Drive 檔，避免與 1.2 版（同網域）混在一起 */
+const K='dosetrack-v1'+ENV;
+let S={entries:[],hl:120,h:0,tw:0,ts:0};
+try{const r=localStorage.getItem(K);if(r){const p=JSON.parse(r);if(p&&Array.isArray(p.entries))S={entries:p.entries,hl:Number(p.hl)||120,h:Number(p.h)||0,tw:Number(p.tw)||0,ts:Number(p.ts)||0}}}catch(e){}
+const save=()=>{S.ts=Date.now();try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}schedPush();try{askBkSoon()}catch(e){}};
+const $=id=>document.getElementById(id);
+const LS={get:(k,d)=>{try{const v=localStorage.getItem(k);return v===null?d:v}catch(e){return d}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+function applyTheme(){const de=document.documentElement;if(!de||!de.setAttribute)return;const t=LS.get('dt-theme','auto');if(t==='light'||t==='dark')de.setAttribute('data-theme',t);else de.removeAttribute('data-theme')}
+applyTheme();
+const pad=n=>String(n).padStart(2,'0');
+const today=()=>{const d=new Date();return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())};
+const dn=s=>{const [y,m,d]=s.split('-').map(Number);return Math.round(Date.UTC(y,m-1,d)/864e5)};
+const fromDn=n=>{const d=new Date(n*864e5);return d.getUTCFullYear()+'-'+pad(d.getUTCMonth()+1)+'-'+pad(d.getUTCDate())};
+const md=s=>s.slice(5).replace('-','/');
+const sorted=()=>S.entries.slice().sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:a.id-b.id);
+const onBoard=(day)=>{const k=Math.LN2/(S.hl/24);let t=0;for(const e of S.entries){if(e.dose>0){const x=day-dn(e.date);if(x>=0)t+=e.dose*Math.exp(-k*x)}}return t};
+let RANGE=LS.get('dt-range','all'),BPV=LS.get('dt-bpv','all');
+const rangeCut=()=>RANGE==='all'?'':fromDn(dn(today())-(+RANGE)+1);
+const inR=e=>{const c=rangeCut();return !c||e.date>=c};
+function seg(id,opts,get,set,after){const c=$(id);c.textContent='';opts.forEach(([v,t])=>{const b=document.createElement('button');b.textContent=t;if(get()===v)b.className='on';b.onclick=()=>{set(v);seg(id,opts,get,set,after);(after||drawCharts)()};c.appendChild(b)})}
+let LSORT=LS.get('dt-lsort','desc'),LTYPE=LS.get('dt-ltype','all'),LMON='';
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+let cw=null,cd=null;
+let editId=null,moreTouched=false,listLim=30;
+function startEdit(e){
+  editId=e.id;
+  $('f-date').value=e.date;$('f-dose').value=e.dose>0?e.dose:'';$('f-wt').value=e.wt>0?e.wt:'';
+  $('f-site').value=e.site||nextSite();$('f-note').value=e.note||'';
+  ['sys','dia','pul','fat','mus','vis','bage','bmr'].forEach(k=>{$('f-'+k).value=e[k]>0?e[k]:''});
+  if(e.sys>0||e.pul>0||e.fat>0||e.mus>0||e.vis>0||e.bage>0||e.bmr>0)$('f-more').open=true;
+  $('add').textContent='更新記錄';$('cancel-edit').style.display='block';
+  $('msg').textContent='正在編輯 '+e.date+' 的記錄。';
+  $('f-date').scrollIntoView({behavior:'smooth',block:'center'});
+}
+function cancelEdit(){
+  editId=null;$('add').textContent='儲存記錄';$('cancel-edit').style.display='none';
+  $('f-date').value=today();$('f-dose').value='';$('f-wt').value='';$('f-note').value='';$('msg').textContent='';
+  ['sys','dia','pul','fat','mus','vis','bage','bmr'].forEach(k=>{$('f-'+k).value=''});
+  $('f-site').value=nextSite();
+}
+function updBk(){
+  const el=$('bk-rem');if(!el)return;
+  const days=+LS.get('dt-bkdays','7'),last=+LS.get('dt-lastbk'+ENV,'0');
+  const dirty=S.entries.length>0&&(!last||(S.ts||0)>last);
+  const age=last?(Date.now()-last)/864e5:Infinity;
+  const show=days>0&&dirty&&age>=days&&LS.get('dt-bkhide'+ENV,'')!==today();
+  el.style.display=show?'':'none';
+  if(show)$('bk-rem-t').textContent=last?'已經 '+Math.floor(age)+' 天沒有備份，這段期間有新的記錄。':'還沒有備份過，資料目前只存在這個瀏覽器。';
+}
+function bkMark(){LS.set('dt-lastbk'+ENV,String(Date.now()));updBk()}
+const SITES=['左腹','腹中','右腹','左大腿','右大腿','左上臂','右上臂'];
+function nextSite(){const l=sorted().filter(e=>e.dose>0&&e.site).pop();const i=l?SITES.indexOf(l.site):-1;return SITES[(i+1)%SITES.length]}
+SITES.forEach(s=>{const o=document.createElement('option');o.value=s;o.textContent=s;$('f-site').appendChild(o)});
+
+function render(){
+  const es=sorted();
+  const ws=es.filter(e=>e.wt>0),ds=es.filter(e=>e.dose>0);
+  $('s-w').textContent=ws.length?ws[ws.length-1].wt.toFixed(1):'–';
+  if(ws.length>1){const c=ws[ws.length-1].wt-ws[0].wt;$('s-c').textContent=(c>0?'+':'')+c.toFixed(1)}else $('s-c').textContent='–';
+  $('s-d').textContent=ds.length?ds[ds.length-1].dose:'–';
+  $('s-dl').textContent=ds.length?'最近一次劑量 (mg，'+md(ds[ds.length-1].date)+')':'最近一次劑量 (mg)';
+  $('s-o').textContent=ds.length?onBoard(dn(today())).toFixed(1):'–';
+  const lw=ws.length?ws[ws.length-1].wt:0;
+  if(lw&&S.h>0){const m=S.h/100,b=lw/(m*m);$('s-b').textContent=b.toFixed(1);$('s-bs').textContent='BMI（'+(b<18.5?'過輕':b<24?'正常':b<27?'過重':'肥胖')+'）'}else{$('s-b').textContent='–';$('s-bs').textContent='BMI（請在設定輸入身高）'}
+  if(lw&&S.tw>0){const g=lw-S.tw;$('s-t').textContent=g>0?g.toFixed(1):'已達成';$('s-ts').textContent='距離目標 '+S.tw+' kg，還有 (kg)'}else{$('s-t').textContent='–';$('s-ts').textContent='距離目標（請在設定輸入）'}
+  const last=ds[ds.length-1];
+  if(last){const due=dn(last.date)+7,left=due-dn(today());const wd='日一二三四五六'[new Date(due*864e5).getUTCDay()];$('s-n').textContent='下次注射：'+md(fromDn(due))+'（週'+wd+'）';$('s-n').style.color=left<=0?'var(--wt)':'';$('s-ns').textContent=(left>0?'還有 '+left+' 天':left===0?'就是今天':'已逾期 '+(-left)+' 天')+'，建議部位：'+nextSite()}
+  else{$('s-n').textContent='尚無注射記錄';$('s-ns').textContent='建議第一針部位：'+SITES[0]}
+  if(editId===null)$('f-site').value=nextSite();
+  const sh=(id,c)=>{$(id).style.display=c?'':'none'};
+  sh('c-w',ws.length>0);sh('c-c',ws.length>1);sh('c-b',ws.length>0);sh('c-t',ws.length>0);
+  sh('c-d',ds.length>0);sh('c-o',ds.length>0);sh('c-n',ds.length>0);
+  const lastOf=(k,f)=>{for(let i=es.length-1;i>=0;i--)if(f?f(es[i]):es[i][k]>0)return es[i];return null};
+  const lb=lastOf(null,e=>e.sys>0&&e.dia>0);
+  if(lb){$('s-bp').textContent=lb.sys+'/'+lb.dia;$('s-bps').textContent='最新血壓 (mmHg)'+(lb.pul>0?'，脈搏 '+lb.pul:'')}
+  sh('c-bp',!!lb);
+  [['fat','s-fat'],['mus','s-mus'],['vis','s-vis'],['bage','s-bage'],['bmr','s-bmr']].forEach(([k,id])=>{const x=lastOf(k);if(x)$(id).textContent=x[k];sh('c-'+k,!!x)});
+  if(!moreTouched&&es.some(e=>e.sys>0||e.pul>0||e.fat>0||e.mus>0||e.vis>0||e.bage>0||e.bmr>0))$('f-more').open=true;
+  const L=$('list');L.textContent='';
+  if(!es.length){const d=document.createElement('div');d.className='empty';d.textContent='還沒有記錄，先新增第一筆吧。';L.appendChild(d)}
+  sh('list-ctl',es.length>0);
+  const ms=[...new Set(es.map(e=>e.date.slice(0,7)))].reverse();
+  if(!ms.includes(LMON))LMON='';
+  const sel=$('l-mon');sel.textContent='';
+  const o0=document.createElement('option');o0.value='';o0.textContent='全部月份';sel.appendChild(o0);
+  ms.forEach(m=>{const o=document.createElement('option');o.value=m;o.textContent=m.replace('-','年')+'月';sel.appendChild(o)});
+  sel.value=LMON;
+  sel.onchange=()=>{LMON=sel.value;listLim=30;render()};
+  const lre=()=>{listLim=30;render()};
+  seg('seg-lsort',[['desc','新到舊'],['asc','舊到新']],()=>LSORT,v=>{LSORT=v;LS.set('dt-lsort',v)},lre);
+  seg('seg-ltype',[['all','全部'],['dose','注射'],['wt','體重'],['bp','血壓'],['bc','體組成']],()=>LTYPE,v=>{LTYPE=v;LS.set('dt-ltype',v)},lre);
+  const lmatch=e=>LTYPE==='all'||(LTYPE==='dose'&&e.dose>0)||(LTYPE==='wt'&&e.wt>0)||(LTYPE==='bp'&&(e.sys>0||e.pul>0))||(LTYPE==='bc'&&(e.fat>0||e.mus>0||e.vis>0||e.bage>0||e.bmr>0));
+  const rows=es.filter(e=>lmatch(e)&&(!LMON||e.date.slice(0,7)===LMON));
+  if(LSORT==='desc')rows.reverse();
+  $('l-cnt').textContent='符合 '+rows.length+' 筆，共 '+es.length+' 筆記錄';
+  if(es.length&&!rows.length){const d=document.createElement('div');d.className='empty';d.textContent='沒有符合條件的記錄。';L.appendChild(d)}
+  rows.slice(0,listLim).forEach(e=>{
+    const it=document.createElement('div');it.className='item';
+    const l=document.createElement('div');
+    const a=document.createElement('div');a.textContent=e.date;
+    const b=document.createElement('div');
+    if(e.dose>0){const s=document.createElement('span');s.className='d';s.textContent='注射 '+e.dose+' mg'+(e.site?'（'+e.site+'）':'');b.appendChild(s)}
+    if(e.dose>0&&e.wt>0)b.appendChild(document.createTextNode('　'));
+    if(e.wt>0){const s=document.createElement('span');s.className='w';s.textContent='體重 '+e.wt+' kg';b.appendChild(s)}
+    const ex=[];
+    if(e.sys>0&&e.dia>0)ex.push(['p','血壓 '+e.sys+'/'+e.dia+(e.pul>0?'，脈搏 '+e.pul:'')]);
+    else if(e.pul>0)ex.push(['p','脈搏 '+e.pul]);
+    if(e.fat>0)ex.push(['q','體脂 '+e.fat+'%']);
+    if(e.mus>0)ex.push(['q','骨骼肌 '+e.mus+'%']);
+    if(e.vis>0)ex.push(['q','內臟脂肪 '+e.vis]);
+    if(e.bage>0)ex.push(['q','身體年齡 '+e.bage]);
+    if(e.bmr>0)ex.push(['q','基礎代謝 '+e.bmr+' kcal']);
+    const b2=document.createElement('div');
+    ex.forEach((x,i)=>{if(i)b2.appendChild(document.createTextNode('　'));const sp=document.createElement('span');sp.className=x[0];sp.textContent=x[1];b2.appendChild(sp)});
+    l.appendChild(a);l.appendChild(b);if(ex.length)l.appendChild(b2);
+    if(e.note){const n=document.createElement('small');n.textContent=e.note;l.appendChild(n)}
+    const x=document.createElement('button');x.className='x';x.textContent='刪除';
+    x.onclick=()=>{if(x.dataset.c){if(editId===e.id)cancelEdit();S.entries=S.entries.filter(z=>z.id!==e.id);save();render();drawCharts()}else{x.dataset.c=1;x.textContent='再按一次確認';setTimeout(()=>{x.dataset.c='';x.textContent='刪除'},3000)}};
+    const ed=document.createElement('button');ed.className='x';ed.textContent='編輯';ed.onclick=()=>startEdit(e);
+    const bx=document.createElement('div');bx.style.cssText='display:flex;gap:6px;flex-shrink:0';bx.appendChild(ed);bx.appendChild(x);
+    it.appendChild(l);it.appendChild(bx);L.appendChild(it);
+  });
+  updBk();
+  if(rows.length>listLim){const mb=document.createElement('button');mb.className='sec';mb.textContent='顯示更多（還有 '+(rows.length-listLim)+' 筆）';mb.onclick=()=>{listLim+=50;render()};L.appendChild(mb);const ma=document.createElement('button');ma.className='sec';ma.textContent='全部顯示';ma.onclick=()=>{listLim=1e9;render()};L.appendChild(ma)}
+}
+
+let live=[];
+function showErr(cid,e){
+  const p=$(cid).parentNode;let m=p.querySelector('.cerr');
+  if(!m){m=document.createElement('div');m.className='note cerr';p.appendChild(m)}
+  m.textContent='圖表產生失敗：'+(e&&e.message?e.message:e);
+}
+/* 產生各圖表的設定；畫面與截圖共用，只差在調色盤 */
+function chartSpecs(pal){
+  const {tx,mu,ln,dc,wc,c3,c4}=pal;
+  const all=sorted(),es=all.filter(inR),ws=es.filter(e=>e.wt>0),dsAll=all.filter(e=>e.dose>0);
+  const bs=es.filter(e=>e.sys>0&&e.dia>0),bc=es.filter(e=>e.fat>0||e.mus>0||e.vis>0);
+  const bm=es.filter(e=>e.bage>0||e.bmr>0),hb=S.h>0&&ws.length>0;
+  const grid=()=>({color:ln}),tk=()=>({maxTicksLimit:8});
+  const leg=()=>({labels:{color:tx,boxWidth:12}});
+  const ln3=(label,data,color,extra)=>Object.assign({label,data,borderColor:color,backgroundColor:color,tension:.25,pointRadius:data.length>80?1.5:3,spanGaps:true},extra||{});
+  const sp=[];
+  if(ws.length){
+    sp.push({id:'cv-w',title:'體重 (kg)',dates:ws.map(e=>e.date),extra:i=>{const x=[];if(S.h>0)x.push('BMI '+(ws[i].wt/((S.h/100)*(S.h/100))).toFixed(1));if(omTime(ws[i]))x.push('時間 '+omTime(ws[i]));return x},cfg:{type:'line',data:{labels:ws.map(e=>md(e.date)),datasets:[ln3('體重 (kg)',ws.map(e=>e.wt),wc)].concat(S.tw>0?[{label:'目標 '+S.tw+' kg',data:ws.map(()=>S.tw),borderColor:mu,backgroundColor:mu,borderDash:[6,4],borderWidth:1.5,pointRadius:0}]:[])},
+      options:{maintainAspectRatio:false,plugins:{legend:{display:S.tw>0,labels:leg().labels}},scales:{x:{grid:grid(),ticks:tk()},y:{grid:grid()}}}}});
+  }
+  if(dsAll.length){
+    const labels=[],doses=[],ob=[],dts=[];
+    const c0=rangeCut(),a=Math.max(dn(dsAll[0].date),c0?dn(c0):-1e9),b=Math.max(dn(today()),dn(dsAll[dsAll.length-1].date))+7;
+    const dm={};dsAll.forEach(e=>{dm[e.date]=(dm[e.date]||0)+e.dose});
+    for(let i=a;i<=b;i++){const s2=fromDn(i);labels.push(md(s2));dts.push(s2);doses.push(dm[s2]||null);ob.push(+onBoard(i).toFixed(2))}
+    sp.push({id:'cv-d',title:'注射劑量與預估體內殘留 (mg)',dates:dts,extra:i=>dsAll.filter(e=>e.date===dts[i]).map(e=>'注射 '+e.dose+' mg'+(e.site?'（'+e.site+'）':'')),cfg:{data:{labels,datasets:[
+      {type:'bar',label:'注射劑量 (mg)',data:doses,backgroundColor:dc,order:2},
+      {type:'line',label:'預估殘留 (mg)',data:ob,borderColor:wc,backgroundColor:wc,pointRadius:0,tension:.3,order:1}]},
+      options:{maintainAspectRatio:false,plugins:{legend:leg()},scales:{x:{grid:grid(),ticks:tk()},y:{grid:grid(),beginAtZero:true}}}}});
+  }
+  if(bs.length){
+    const wt=e=>omTime(e);
+    const days={};bs.forEach(e=>{(days[e.date]=days[e.date]||[]).push(e)});
+    const dl=Object.keys(days).sort();
+    const av=(a,f)=>{const v=a.map(f).filter(x=>x>0);return v.length?Math.round(v.reduce((p,q)=>p+q,0)/v.length):null};
+    const rg=(a,f)=>{const v=a.map(f).filter(x=>x>0);return v.length?Math.min(...v)+'–'+Math.max(...v):''};
+    const timed=bs.filter(e=>wt(e)).length;
+    const mode=BPV==='ampm'&&timed===0?'day':BPV;
+    const opt={maintainAspectRatio:false,plugins:{legend:leg()},scales:{x:{grid:grid(),ticks:tk()},y:{grid:grid()}}};
+    if(mode==='day'){
+      const d3=[ln3('收縮壓（日均）',dl.map(d=>av(days[d],e=>e.sys)),c3),ln3('舒張壓（日均）',dl.map(d=>av(days[d],e=>e.dia)),c4)];
+      if(bs.some(e=>e.pul>0))d3.push(ln3('脈搏（日均）',dl.map(d=>av(days[d],e=>e.pul)),mu,{borderDash:[4,3],pointRadius:2}));
+      sp.push({id:'cv-bp',title:'血壓與脈搏（每日平均）',dates:dl,
+        note:(BPV==='ampm'?'這段範圍內的血壓記錄都沒有量測時間，無法分早晚，已改為每日平均。':'同一天多次量測取平均；提示框會顯示當天次數與範圍。'),
+        extra:i=>{const a=days[dl[i]],x=[a.length+' 次量測'];const r1=rg(a,e=>e.sys),r2=rg(a,e=>e.dia);if(a.length>1)x.push('收縮壓 '+r1+'，舒張壓 '+r2);return x},
+        cfg:{type:'line',data:{labels:dl.map(md),datasets:d3},options:opt}});
+    }else if(mode==='ampm'){
+      const part=(d,am)=>days[d].filter(e=>{const t=wt(e);return t&&((parseInt(t)<12)===am)});
+      const mk2=(lab,am,f,color,dash)=>ln3(lab,dl.map(d=>av(part(d,am),f)),color,{borderDash:dash||[],pointRadius:3});
+      const d3=[mk2('早上 收縮壓',true,e=>e.sys,c3),mk2('早上 舒張壓',true,e=>e.dia,c4),mk2('晚上 收縮壓',false,e=>e.sys,c3,[5,3]),mk2('晚上 舒張壓',false,e=>e.dia,c4,[5,3])];
+      const nt=bs.length-timed;
+      sp.push({id:'cv-bp',title:'血壓（早／晚分開）',dates:dl,
+        note:'早上＝12:00 前量測，晚上＝12:00 後，實線為早上、虛線為晚上，同時段多次量測取平均。'+(nt?'有 '+nt+' 筆沒有量測時間，未納入此圖。':''),
+        extra:i=>{const x=[];[['早上',true],['晚上',false]].forEach(([n,am])=>{const a=part(dl[i],am);if(a.length)x.push(n+' '+a.length+' 次')});return x},
+        cfg:{type:'line',data:{labels:dl.map(md),datasets:d3},options:opt}});
+    }else{
+      const ds3=[ln3('收縮壓',bs.map(e=>e.sys),c3),ln3('舒張壓',bs.map(e=>e.dia),c4)];
+      if(bs.some(e=>e.pul>0))ds3.push(ln3('脈搏',bs.map(e=>e.pul>0?e.pul:null),mu,{borderDash:[4,3],pointRadius:2}));
+      sp.push({id:'cv-bp',title:'血壓與脈搏',dates:bs.map(e=>e.date),note:'',extra:i=>[wt(bs[i])?'時間 '+wt(bs[i]):'',(bs[i].note||'').replace(/^\d{1,2}:\d{2}[，,]?/,'')].filter(Boolean),
+        cfg:{type:'line',data:{labels:bs.map(e=>md(e.date)),datasets:ds3},options:opt}});
+    }
+  }
+  if(hb){
+    const m2=(S.h/100)*(S.h/100);
+    sp.push({id:'cv-bmi',title:'BMI（身高 '+S.h+' cm，虛線為 24 與 27 界線）',dates:ws.map(e=>e.date),extra:i=>['體重 '+ws[i].wt+' kg'],cfg:{type:'line',data:{labels:ws.map(e=>md(e.date)),datasets:[
+      ln3('BMI',ws.map(e=>+(e.wt/m2).toFixed(1)),wc),
+      {label:'過重 24',data:ws.map(()=>24),borderColor:mu,backgroundColor:mu,borderDash:[6,4],borderWidth:1,pointRadius:0},
+      {label:'肥胖 27',data:ws.map(()=>27),borderColor:mu,backgroundColor:mu,borderDash:[2,3],borderWidth:1,pointRadius:0}]},
+      options:{maintainAspectRatio:false,plugins:{legend:leg()},scales:{x:{grid:grid(),ticks:tk()},y:{grid:grid()}}}}});
+  }
+  if(bm.length){
+    const hg=bm.some(e=>e.bage>0),hr=bm.some(e=>e.bmr>0);
+    const d2=[];
+    if(hg)d2.push(ln3('身體年齡（歲）',bm.map(e=>e.bage>0?e.bage:null),c3,{yAxisID:'y'}));
+    if(hr)d2.push(ln3('基礎代謝 (kcal)',bm.map(e=>e.bmr>0?e.bmr:null),c4,{yAxisID:'y1'}));
+    sp.push({id:'cv-bm',title:'身體年齡與基礎代謝',dates:bm.map(e=>e.date),cfg:{type:'line',data:{labels:bm.map(e=>md(e.date)),datasets:d2},
+      options:{maintainAspectRatio:false,plugins:{legend:leg()},scales:{x:{grid:grid(),ticks:tk()},y:{grid:grid(),display:hg,position:'left'},y1:{display:hr,position:'right',grid:{drawOnChartArea:false}}}}}});
+  }
+  if(bc.length){
+    const hf=bc.some(e=>e.fat>0),hm=bc.some(e=>e.mus>0),hv=bc.some(e=>e.vis>0);
+    const dsb=[];
+    if(hf)dsb.push(ln3('體脂率 (%)',bc.map(e=>e.fat>0?e.fat:null),c3,{yAxisID:'y'}));
+    if(hm)dsb.push(ln3('骨骼肌率 (%)',bc.map(e=>e.mus>0?e.mus:null),c4,{yAxisID:'y'}));
+    if(hv)dsb.push(ln3('內臟脂肪等級',bc.map(e=>e.vis>0?e.vis:null),wc,{yAxisID:'y1'}));
+    const sc={x:{grid:grid(),ticks:tk()},y:{grid:grid(),display:hf||hm,position:'left'},y1:{display:hv,position:'right',grid:{drawOnChartArea:false}}};
+    sp.push({id:'cv-bc',title:'體脂、骨骼肌與內臟脂肪',dates:bc.map(e=>e.date),cfg:{type:'line',data:{labels:bc.map(e=>md(e.date)),datasets:dsb},options:{maintainAspectRatio:false,plugins:{legend:leg()},scales:sc}}});
+  }
+  return sp;
+}
+const WD='日一二三四五六';
+const fullDate=d=>d?d+'（週'+WD[new Date(dn(d)*864e5).getUTCDay()]+'）':'';
+const crosshair=color=>({id:'crosshair',afterDatasetsDraw(c){
+  const t=c.tooltip;if(!t||!t.getActiveElements)return;
+  const a=t.getActiveElements();if(!a.length)return;
+  const x=a[0].element.x,ar=c.chartArea,g=c.ctx;
+  g.save();g.beginPath();g.moveTo(x,ar.top);g.lineTo(x,ar.bottom);g.lineWidth=1;g.strokeStyle=color;g.setLineDash([4,3]);g.stroke();g.restore();
+}});
+function addHover(sp,pal){
+  const o=sp.cfg.options;
+  o.interaction={mode:'index',intersect:false,axis:'x'};
+  o.plugins=o.plugins||{};
+  o.plugins.tooltip={mode:'index',intersect:false,padding:10,titleFont:{size:13},bodyFont:{size:13},footerFont:{size:12,weight:'normal'},filter:it=>!/^(過重|肥胖) /.test(it.dataset.label||''),
+    callbacks:{title:it=>it.length&&sp.dates?fullDate(sp.dates[it[0].dataIndex]):'',footer:it=>it.length&&sp.extra?sp.extra(it[0].dataIndex):[]}};
+  sp.cfg.plugins=[crosshair(pal.mu)];
+}
+function drawCharts(){
+  document.querySelectorAll('.cerr').forEach(n=>n.remove());
+  const sh=(id,c)=>{$(id).style.display=c?'':'none'};
+  if(typeof Chart==='undefined'){
+    ['card-w','card-d','card-bp','card-bmi','card-bm','card-bc','exp-card','range-card'].forEach(id=>{$(id).style.display='none'});
+    $('chart-empty').textContent='圖表函式庫載入失敗，請確認網路或 VPN 沒有擋住 cdnjs.cloudflare.com，然後重新整理頁面。';
+    $('chart-empty').style.display='';
+    return;
+  }
+  const mk=(cid,cfg)=>{try{const el=$(cid);if(!el||el.tagName!=='CANVAS')throw new Error('找不到畫布 '+cid);const c=new Chart(el,cfg);if(!c||!c.ctx){showErr(cid,'無法取得畫布');return null}return c}catch(e){showErr(cid,e);return null}};
+  const pal={tx:css('--tx'),mu:css('--mu'),ln:css('--ln'),dc:css('--dose'),wc:css('--wt'),c3:css('--c3'),c4:css('--c4')};
+  Chart.defaults.color=pal.mu;Chart.defaults.font.family='"Noto Sans TC",system-ui,sans-serif';
+  live.forEach(c=>{if(c)c.destroy()});live=[];
+  const all=sorted(),es=all.filter(inR),ws=es.filter(e=>e.wt>0),dsAll=all.filter(e=>e.dose>0);
+  const bs=es.filter(e=>e.sys>0&&e.dia>0),bc=es.filter(e=>e.fat>0||e.mus>0||e.vis>0);
+  const bm=es.filter(e=>e.bage>0||e.bmr>0),hb=S.h>0&&ws.length>0;
+  sh('card-w',ws.length>0);sh('card-d',dsAll.length>0);sh('card-bp',bs.length>0);sh('card-bc',bc.length>0);
+  sh('card-bmi',hb);sh('card-bm',bm.length>0);
+  const any=!!(all.some(e=>e.wt>0||e.dose>0||e.sys>0||e.fat>0||e.mus>0||e.vis>0||e.bage>0||e.bmr>0));
+  sh('chart-empty',!any);sh('exp-card',any);sh('range-card',any);
+  seg('seg-range',[['30','近 30 天'],['90','近 90 天'],['all','全部']],()=>RANGE,v=>{RANGE=v;LS.set('dt-range',v)});
+  seg('seg-bp',[['all','全部量測'],['day','每日平均'],['ampm','早／晚分開']],()=>BPV,v=>{BPV=v;LS.set('dt-bpv',v)});
+  const specs=chartSpecs(pal),bsp=specs.find(z=>z.id==='cv-bp');$('bp-note').textContent=bsp&&bsp.note?bsp.note:'';
+  specs.forEach(sp=>{addHover(sp,pal);live.push(mk(sp.id,sp.cfg))});
+}
+
+/* ---------- 圖表截圖：所有圖表合成一張高解析度圖片 ---------- */
+let expBlob=null,expName='',expUrl='';
+async function exportCharts(){
+  const msg=t=>{$('exp-msg').textContent=t};
+  if(typeof Chart==='undefined'){msg('圖表函式庫尚未載入，無法產生截圖。');return}
+  const pal={tx:'#14212b',mu:'#5d6b78',ln:'#d5dde4',dc:'#0e7490',wc:'#c2410c',c3:'#7c3aed',c4:'#15803d'};
+  const specs=chartSpecs(pal);
+  if(!specs.length){msg('目前沒有可匯出的圖表。');return}
+  msg('正在產生圖片…');
+  const font='"Noto Sans TC",system-ui,sans-serif';
+  const cols=Math.min(2,specs.length),rows=Math.ceil(specs.length/cols);
+  const CW=1100,CH=520,PAD=40,HEAD=170,TIT=64;
+  const W=cols*CW+(cols+1)*PAD,H=HEAD+rows*(TIT+CH+PAD);
+  const cv=document.createElement('canvas');cv.width=W;cv.height=H;
+  const g=cv.getContext('2d');
+  g.fillStyle='#ffffff';g.fillRect(0,0,W,H);
+  const es=sorted(),dates=es.map(e=>e.date);
+  g.fillStyle=pal.tx;g.font='bold 46px '+font;g.fillText('注射與體重記錄：圖表總覽',PAD,72);
+  g.fillStyle=pal.mu;g.font='28px '+font;
+  g.fillText('資料期間 '+(dates.length?dates[0]+' 到 '+dates[dates.length-1]:'無')+'（共 '+es.length+' 筆記錄）',PAD,116);
+  const prof=[];
+  if(S.h>0)prof.push('身高 '+S.h+' cm');
+  if(S.tw>0)prof.push('目標體重 '+S.tw+' kg');
+  if(es.some(e=>e.dose>0))prof.push('藥物半衰期 '+S.hl+' 小時');
+  if(RANGE!=='all')prof.push('範圍 近 '+RANGE+' 天');
+  prof.push('產生於 '+today());
+  g.fillText(prof.join('　|　'),PAD,152);
+  const prev={color:Chart.defaults.color,size:Chart.defaults.font.size};
+  Chart.defaults.color=pal.mu;Chart.defaults.font.size=22;
+  try{
+    specs.forEach((sp,i)=>{
+      const x=PAD+(i%cols)*(CW+PAD),y=HEAD+Math.floor(i/cols)*(TIT+CH+PAD);
+      g.fillStyle=pal.tx;g.font='bold 32px '+font;g.fillText(sp.title,x,y+36);
+      try{
+        const oc=document.createElement('canvas');oc.width=CW;oc.height=CH;
+        const cfg=JSON.parse(JSON.stringify(sp.cfg));
+        Object.assign(cfg.options,{responsive:false,animation:false,devicePixelRatio:1,maintainAspectRatio:false});
+        const c=new Chart(oc,cfg);
+        if(!c||!c.ctx)throw new Error('no ctx');
+        g.drawImage(oc,x,y+TIT);c.destroy();
+      }catch(e){
+        const lc=live.find(z=>z&&z.canvas&&z.canvas.id===sp.id);
+        if(lc){g.fillStyle=css('--card')||'#172028';g.fillRect(x,y+TIT,CW,CH);g.drawImage(lc.canvas,x,y+TIT,CW,CH)}
+        else{g.fillStyle='#b91c1c';g.font='28px '+font;g.fillText('此圖表產生失敗',x,y+TIT+44)}
+      }
+    });
+  }finally{Chart.defaults.color=prev.color;Chart.defaults.font.size=prev.size}
+  const blob=await new Promise(res=>{try{cv.toBlob(res,'image/png')}catch(e){res(null)}});
+  if(!blob){msg('無法產生圖片，可能是圖片尺寸超出瀏覽器限制。');return}
+  expBlob=blob;expName='dose-tracker-charts-'+today()+'.png';
+  try{if(expUrl)URL.revokeObjectURL(expUrl)}catch(e){}
+  expUrl=URL.createObjectURL(blob);
+  $('exp-img').src=expUrl;$('exp-out').style.display='block';
+  msg('已產生 '+W+' × '+H+' 像素的圖片。可分享給 AI 或下載。');
+  adaptExport();
+}
+
+/* ---------- 數據摘要（純文字，給 AI 搭配圖片分析） ---------- */
+function buildSummary(withPrompt){
+  const es=sorted(),T=dn(today()),L=[];
+  const f=(n,d)=>(+n).toFixed(d===undefined?1:d);
+  const sg=n=>{const r=Math.round(n*10)/10;return (r>0?'+':r<0?'−':'')+Math.abs(r).toFixed(1)};
+  const avg=a=>a.reduce((x,y)=>x+y,0)/a.length;
+  const daily=k=>{const m={};es.forEach(e=>{if(e[k]>0)(m[e.date]=m[e.date]||[]).push(e[k])});return Object.keys(m).sort().map(d=>({d,n:dn(d),v:avg(m[d])}))};
+  const win=(a,from,to)=>a.filter(x=>x.n>=T-from&&x.n<=T-to);
+  const dow=n=>(new Date(n*864e5).getUTCDay()+6)%7;
+  const ds=es.filter(e=>e.dose>0),bs=es.filter(e=>e.sys>0&&e.dia>0);
+  if(withPrompt){
+    L.push('請根據以下數據（以及我另外附上的圖表圖片，如果有），協助分析：');
+    L.push('1. 體重、血壓、體組成和注射劑量之間的趨勢與可能的關聯。');
+    L.push('2. 值得留意的變化或異常，並說明這份資料的限制。');
+    L.push('3. 我可以向醫師或藥師詢問的問題清單。');
+    L.push('請不要做診斷，也不要建議調整劑量。');
+    L.push('');
+  }
+  L.push('【注射與體重記錄：數據摘要】');
+  const dates=es.map(e=>e.date);
+  L.push('產生日期 '+today()+'。資料期間 '+(dates.length?dates[0]+' 到 '+dates[dates.length-1]:'無')+'，共 '+es.length+' 筆記錄。');
+  const prof=[];
+  if(S.h>0)prof.push('身高 '+S.h+' cm');
+  if(S.tw>0)prof.push('目標體重 '+S.tw+' kg');
+  if(ds.length)prof.push('藥物半衰期設定 '+S.hl+' 小時（用於估算殘留量）');
+  if(prof.length)L.push('個人設定：'+prof.join('；')+'。');
+
+  if(ds.length){
+    L.push('');L.push('■ 注射');
+    const first=ds[0],last=ds[ds.length-1];
+    L.push('- 共 '+ds.length+' 次，第一次 '+first.date+'（'+first.dose+' mg），最近一次 '+last.date+'（'+last.dose+' mg），距今 '+(T-dn(last.date))+' 天。');
+    const runs=[];ds.forEach(e=>{const r=runs[runs.length-1];if(r&&r.dose===e.dose){r.to=e.date;r.n++}else runs.push({dose:e.dose,from:e.date,to:e.date,n:1})});
+    L.push('- 劑量歷程：'+runs.map(r=>r.dose+' mg（'+r.from+(r.to!==r.from?' 到 '+r.to:'')+'，'+r.n+' 次）').join('；')+'。');
+    const gaps=[];for(let i=1;i<ds.length;i++)gaps.push({g:dn(ds[i].date)-dn(ds[i-1].date),a:ds[i-1].date,b:ds[i].date});
+    if(gaps.length){
+      const odd=gaps.filter(x=>x.g!==7);
+      L.push('- 注射間隔（天）：平均 '+f(avg(gaps.map(x=>x.g)))+'，最短 '+Math.min(...gaps.map(x=>x.g))+'，最長 '+Math.max(...gaps.map(x=>x.g))+'；不是 7 天的共 '+odd.length+' 次'+(odd.length?'（'+odd.slice(-6).map(x=>x.a.slice(5)+'→'+x.b.slice(5)+' '+x.g+' 天').join('、')+(odd.length>6?'，僅列最近 6 次':'')+'）':'')+'。');
+    }
+    L.push('- 最近 6 次部位：'+ds.slice(-6).map(e=>e.date.slice(5)+' '+e.dose+' mg '+(e.site||'未記錄')).join('；')+'。');
+    L.push('- 依設定估算目前體內殘留約 '+f(onBoard(T))+' mg（簡化模型，不是血中濃度）。');
+  }
+
+  const W=daily('wt');
+  if(W.length){
+    L.push('');L.push('■ 體重 (kg)');
+    const first=W[0],last=W[W.length-1];
+    L.push('- 第一筆 '+f(first.v)+'（'+first.d+'），最新 '+f(last.v)+'（'+last.d+'），變化 '+sg(last.v-first.v)+' kg（'+sg((last.v-first.v)/first.v*100)+'%）。');
+    const w7=win(W,6,0),w30=win(W,29,0),p30=win(W,59,30);
+    const parts=[];
+    if(w7.length)parts.push('近 7 天平均 '+f(avg(w7.map(x=>x.v)))+'（'+w7.length+' 天有記錄）');
+    if(w30.length)parts.push('近 30 天平均 '+f(avg(w30.map(x=>x.v)))+'（'+w30.length+' 天）');
+    if(p30.length)parts.push('再前 30 天平均 '+f(avg(p30.map(x=>x.v)))+'（'+p30.length+' 天）');
+    if(parts.length)L.push('- '+parts.join('；')+'。');
+    const mx=W.reduce((a,b)=>b.v>a.v?b:a),mn=W.reduce((a,b)=>b.v<a.v?b:a);
+    L.push('- 最高 '+f(mx.v)+'（'+mx.d+'），最低 '+f(mn.v)+'（'+mn.d+'）。同一天多筆已取平均。');
+    if(S.tw>0)L.push('- 目標 '+S.tw+' kg，'+(last.v>S.tw?'距離目標還差 '+f(last.v-S.tw)+' kg':'已達成')+'。');
+    if(S.h>0){
+      const m2=(S.h/100)*(S.h/100),b1=first.v/m2,b2=last.v/m2;
+      L.push('- BMI：第一筆 '+f(b1)+'，最新 '+f(b2)+'（台灣成人標準：'+(b2<18.5?'過輕':b2<24?'正常':b2<27?'過重':'肥胖')+'）。');
+    }
+  }
+
+  if(bs.length){
+    L.push('');L.push('■ 血壓與脈搏');
+    const bd=new Set(bs.map(e=>e.date)),lb=bs[bs.length-1];
+    L.push('- 共 '+bs.length+' 次量測，分布在 '+bd.size+' 天。最新 '+lb.sys+'/'+lb.dia+' mmHg'+(lb.pul>0?'，脈搏 '+lb.pul:'')+'（'+lb.date+(omTime(lb)?' '+omTime(lb):'')+'）。');
+    const ps=bs.filter(e=>e.pul>0);
+    L.push('- 全期平均 '+f(avg(bs.map(e=>e.sys)),0)+'/'+f(avg(bs.map(e=>e.dia)),0)+(ps.length?'，脈搏平均 '+f(avg(ps.map(e=>e.pul)),0):'')+'；收縮壓範圍 '+Math.min(...bs.map(e=>e.sys))+'–'+Math.max(...bs.map(e=>e.sys))+'，舒張壓範圍 '+Math.min(...bs.map(e=>e.dia))+'–'+Math.max(...bs.map(e=>e.dia))+'。');
+    const inWin=(a,b2)=>bs.filter(e=>{const n=dn(e.date);return n>=T-a&&n<=T-b2});
+    const r30=inWin(29,0),q30=inWin(59,30);
+    const wl=[];
+    if(r30.length)wl.push('近 30 天平均 '+f(avg(r30.map(e=>e.sys)),0)+'/'+f(avg(r30.map(e=>e.dia)),0)+'（'+r30.length+' 次）');
+    if(q30.length)wl.push('再前 30 天平均 '+f(avg(q30.map(e=>e.sys)),0)+'/'+f(avg(q30.map(e=>e.dia)),0)+'（'+q30.length+' 次）');
+    if(wl.length)L.push('- '+wl.join('；')+'。');
+    const slots=[['上午（12 點前）',h=>h<12],['下午（12–18 點）',h=>h>=12&&h<18],['晚上（18 點後）',h=>h>=18]];
+    const sl=slots.map(([n,fn])=>{const a=bs.filter(e=>{const t=omTime(e);return t&&fn(parseInt(t))});return a.length?n+' '+f(avg(a.map(e=>e.sys)),0)+'/'+f(avg(a.map(e=>e.dia)),0)+'（'+a.length+' 次）':''}).filter(Boolean);
+    if(sl.length)L.push('- 依時段平均：'+sl.join('；')+'。');
+    const hi=bs.filter(e=>e.sys>=140||e.dia>=90).length,lo=bs.filter(e=>e.sys<90||e.dia<60).length;
+    L.push('- 數值門檻計數（只是統計，不是診斷）：收縮壓 ≥140 或舒張壓 ≥90 共 '+hi+' 次；收縮壓 <90 或舒張壓 <60 共 '+lo+' 次。');
+    const irr=bs.filter(e=>(e.note||'').includes('不規則脈波'));
+    if(irr.length)L.push('- 血壓計標記「偵測到不規則脈波」共 '+irr.length+' 次，最近 '+irr.slice(-3).map(e=>e.date).join('、')+'。');
+  }
+
+  const bodyDefs=[['fat','體脂率','%',1],['mus','骨骼肌率','%',1],['vis','內臟脂肪等級','',1],['bage','身體年齡','歲',0],['bmr','基礎代謝',' kcal',0]];
+  const bl=[];
+  bodyDefs.forEach(([k,name,u,d])=>{
+    const a=daily(k);if(!a.length)return;
+    const first=a[0],last=a[a.length-1];
+    const mx=a.reduce((x,y)=>y.v>x.v?y:x),mn=a.reduce((x,y)=>y.v<x.v?y:x);
+    const ago=a.filter(x=>x.n<=T-30).pop();
+    bl.push('- '+name+'：第一筆 '+f(first.v,d)+u+'（'+first.d+'），最新 '+f(last.v,d)+u+'（'+last.d+'），變化 '+(d?sg(last.v-first.v):(last.v-first.v>0?'+':last.v-first.v<0?'−':'')+Math.abs(Math.round(last.v-first.v)))+u+'；範圍 '+f(mn.v,d)+'–'+f(mx.v,d)+(ago?'；約 30 天前 '+f(ago.v,d)+'（'+ago.d+'）':'')+'。');
+  });
+  if(bl.length){L.push('');L.push('■ 體組成（同一天多筆取平均）');bl.forEach(x=>L.push(x))}
+
+  if(es.length){
+    const wk={},mon=n=>n-dow(n);
+    const startWk=mon(T)-11*7;
+    es.forEach(e=>{const n=dn(e.date),m=mon(n);if(m<startWk)return;const o=wk[m]=wk[m]||{dose:[],wt:[],sys:[],dia:[],fat:[]};
+      if(e.dose>0)o.dose.push(e.dose+' mg'+(e.site?'（'+e.site+'）':''));
+      if(e.wt>0)o.wt.push(e.wt);if(e.sys>0&&e.dia>0){o.sys.push(e.sys);o.dia.push(e.dia)}if(e.fat>0)o.fat.push(e.fat)});
+    const keys=Object.keys(wk).map(Number).sort((a,b)=>a-b);
+    if(keys.length){
+      L.push('');L.push('■ 每週摘要（最近 12 週，週一起算）');
+      keys.forEach(m=>{const o=wk[m],p=[];
+        p.push('注射 '+(o.dose.length?o.dose.join('、'):'無'));
+        if(o.wt.length)p.push('體重 '+f(avg(o.wt))+'（'+o.wt.length+' 筆）');
+        if(o.sys.length)p.push('血壓 '+f(avg(o.sys),0)+'/'+f(avg(o.dia),0)+'（'+o.sys.length+' 次）');
+        if(o.fat.length)p.push('體脂 '+f(avg(o.fat))+'%');
+        L.push(fromDn(m)+' 起：'+p.join(' | '))});
+    }
+    const rows=[];
+    for(let n=T-13;n<=T;n++){
+      const d=fromDn(n),day=es.filter(e=>e.date===d);if(!day.length)continue;
+      const p=[],w=day.filter(e=>e.wt>0),b=day.filter(e=>e.sys>0&&e.dia>0),z=day.filter(e=>e.dose>0);
+      if(w.length)p.push('體重 '+f(avg(w.map(e=>e.wt))));
+      if(b.length)p.push('血壓 '+f(avg(b.map(e=>e.sys)),0)+'/'+f(avg(b.map(e=>e.dia)),0)+(b.length>1?' ×'+b.length:''));
+      if(z.length)p.push('注射 '+z.map(e=>e.dose+' mg').join('、'));
+      if(p.length)rows.push(d.slice(5)+'：'+p.join(' | '));
+    }
+    if(rows.length){L.push('');L.push('■ 最近 14 天逐日');rows.forEach(x=>L.push(x))}
+  }
+  L.push('');
+  L.push('※ 以上資料由使用者自行記錄或匯入；殘留量與 BMI 是依設定值計算的估計，不是診斷依據。');
+  return L.join('\n');
+}
+$('sum-btn').onclick=async()=>{
+  const t=buildSummary($('sum-prompt').checked);
+  const ta=$('sum-text');ta.value=t;ta.style.display='block';
+  try{await navigator.clipboard.writeText(t);$('exp-msg').textContent='已複製數據摘要（'+t.length+' 字），可直接貼到 AI 對話。'}
+  catch(e){
+    ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e2){}
+    $('exp-msg').textContent=ok?'已複製數據摘要，可直接貼到 AI 對話。':'無法自動複製，請在下方文字框全選後手動複製。';
+  }
+};
+$('exp-btn').onclick=()=>{exportCharts().catch(e=>{$('exp-msg').textContent='產生截圖失敗：'+(e&&e.message?e.message:e)})};
+function capPlugin(n){try{const C=window.Capacitor;if(!C||!hcAndroid())return null;if(C.Plugins&&C.Plugins[n])return C.Plugins[n];if(C.isPluginAvailable&&C.isPluginAvailable(n)&&C.registerPlugin)return C.registerPlugin(n)}catch(e){}return null}
+const nativeShareOK=()=>!!(capPlugin('Share')&&capPlugin('Filesystem'));
+function adaptExport(){
+  if(!hcAndroid())return;
+  $('exp-dl').style.display='none';$('exp-copy').style.display='none';
+  $('exp-share').textContent='分享或儲存圖片（開啟系統選單）';
+  if(!nativeShareOK())$('exp-msg').textContent='這個 APK 還沒有分享外掛，無法分享或儲存圖片。請依 README 的〈重新建置 APK〉安裝 @capacitor/share 與 @capacitor/filesystem 後重新打包。';
+}
+async function shareNative(){
+  const F=capPlugin('Filesystem'),Sh=capPlugin('Share');
+  const b64=await new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(',')[1]);r.onerror=()=>no(r.error||new Error('讀取圖片失敗'));r.readAsDataURL(expBlob)});
+  await F.writeFile({path:expName,data:b64,directory:'CACHE'});
+  const u=await F.getUri({path:expName,directory:'CACHE'});
+  await Sh.share({title:'注射與體重記錄：圖表',files:[u.uri],dialogTitle:'分享或儲存圖表'});
+}
+$('exp-share').onclick=async()=>{
+  if(!expBlob)return;
+  try{
+    if(hcAndroid()){
+      if(!nativeShareOK()){adaptExport();return}
+      await shareNative();$('exp-msg').textContent='已開啟系統分享選單，可選「儲存」或直接傳給 AI App。';return;
+    }
+    const file=new File([expBlob],expName,{type:'image/png'});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({files:[file],title:'注射與體重記錄：圖表'});return}
+    $('exp-msg').textContent='這個瀏覽器不支援直接分享，請改用「下載 PNG」，或長按圖片儲存。';
+  }catch(e){
+    const msg=e&&e.message?e.message:String(e);
+    if(!(e&&e.name==='AbortError')&&!/cancel/i.test(msg))$('exp-msg').textContent='分享失敗：'+msg;
+  }
+};
+$('exp-dl').onclick=()=>{
+  if(!expBlob)return;
+  const a=document.createElement('a');a.href=expUrl;a.download=expName;document.body.appendChild(a);a.click();a.remove();
+};
+$('exp-copy').onclick=async()=>{
+  if(!expBlob)return;
+  try{await navigator.clipboard.write([new ClipboardItem({'image/png':expBlob})]);$('exp-msg').textContent='已複製圖片，可直接貼到 AI 對話。'}
+  catch(e){$('exp-msg').textContent='這個瀏覽器不支援複製圖片，請改用「下載 PNG」。'}
+};
+
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.id==='p-'+b.dataset.t));
+  if(b.dataset.t==='chart')drawCharts();
+  window.scrollTo(0,0);
+});
+
+$('f-date').value=today();
+const GOOGLE_CLIENT_ID='157434461885-nmum0qv1h34r1u9f0scn7g75u7s09iiu.apps.googleusercontent.com';
+const FN='dose-tracker'+ENV+'.json',SCOPE='https://www.googleapis.com/auth/drive.appdata';
+let tok=null,tokExp=0,tc=null,fid=null,tmr=null,linked=false;
+try{linked=localStorage.getItem('dt-linked'+ENV)==='1'}catch(e){}
+const setSync=t=>{$('sync').textContent=t};
+let toastTmr=null;
+function toast(t,bad){const el=$('toast');if(!el)return;el.textContent=t;el.style.background=bad?'var(--wt)':'var(--btn)';el.style.display='block';clearTimeout(toastTmr);toastTmr=setTimeout(()=>{el.style.display='none'},3000)}
+const ready=()=>tok&&Date.now()<tokExp-60000;
+function updUI(){
+  $('gd-btn').textContent=linked?(ready()?'立即同步':'重新連線 Google Drive'):'連線 Google Drive';
+  $('gd-off').style.display=linked?'block':'none';
+}
+async function gfetch(url,opt){
+  opt=opt||{};
+  const r=await fetch(url,Object.assign({},opt,{headers:Object.assign({Authorization:'Bearer '+tok},opt.headers||{})}));
+  if(r.status===401){tok=null;throw new Error('auth')}
+  if(!r.ok)throw new Error('http '+r.status);
+  return r;
+}
+async function findFile(){
+  const r=await gfetch('https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&fields=files(id)&q='+encodeURIComponent("name='"+FN+"'"));
+  const j=await r.json();fid=j.files&&j.files[0]?j.files[0].id:null;
+}
+async function pushRemote(){
+  if(!ready()){setSync('Google Drive 需要重新連線（點此重新連線）');updUI();return}
+  try{
+    const data=JSON.stringify(S);
+    if(fid){await gfetch('https://www.googleapis.com/upload/drive/v3/files/'+fid+'?uploadType=media',{method:'PATCH',headers:{'Content-Type':'application/json'},body:data})}
+    else{
+      const bd='dtb'+Date.now();
+      const body='--'+bd+'\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n'+JSON.stringify({name:FN,parents:['appDataFolder']})+'\r\n--'+bd+'\r\nContent-Type: application/json\r\n\r\n'+data+'\r\n--'+bd+'--';
+      const r=await gfetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id',{method:'POST',headers:{'Content-Type':'multipart/related; boundary='+bd},body});
+      fid=(await r.json()).id;
+    }
+    setSync('已備份到 Google Drive');bkMark();toast('✓ 已備份到 Google Drive');
+  }catch(e){setSync('Drive 備份失敗，資料仍在本機（點此重新連線）');toast('✗ 備份失敗，資料仍在本機',true)}
+}
+function schedPush(){if(!linked)return;setSync('同步中…');clearTimeout(tmr);tmr=setTimeout(pushRemote,800)}
+async function pullAndMerge(){
+  await findFile();
+  if(fid){
+    const r=await gfetch('https://www.googleapis.com/drive/v3/files/'+fid+'?alt=media');
+    const d=await r.json();
+    if(d&&Array.isArray(d.entries)&&(d.ts||0)>(S.ts||0)){
+      S={entries:d.entries,hl:Number(d.hl)||120,h:Number(d.h)||0,tw:Number(d.tw)||0,ts:d.ts};
+      try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}
+      $('hl').value=S.hl;$('h').value=S.h||'';$('tw').value=S.tw||'';render();
+      if($('p-chart').classList.contains('on'))drawCharts();
+      setSync('已從 Google Drive 載入');bkMark();return;
+    }
+  }
+  await pushRemote();
+}
+function connect(interactive){
+  if(GOOGLE_CLIENT_ID.startsWith('YOUR_')){setSync('尚未設定 Google Client ID，目前僅儲存在本機');return}
+  if(!window.google||!google.accounts){setSync('Google 登入元件尚未載入，請稍後再試');return}
+  if(!tc)tc=google.accounts.oauth2.initTokenClient({client_id:GOOGLE_CLIENT_ID,scope:SCOPE,
+    callback:async r=>{
+      if(r.error||!r.access_token){setSync('Google 連線失敗（點此重新連線）');updUI();return}
+      tok=r.access_token;tokExp=Date.now()+(r.expires_in||3600)*1000;linked=true;
+      try{localStorage.setItem('dt-linked'+ENV,'1')}catch(e){}
+      try{await pullAndMerge()}catch(e){setSync('Drive 同步失敗，資料仍在本機（點此重新連線）')}
+      updUI();
+    },
+    error_callback:()=>{setSync('Google Drive 需要重新連線（點此重新連線）');updUI()}});
+  tc.requestAccessToken({prompt:interactive?'':'none'});
+}
+$('sync').onclick=()=>{if(linked&&!ready())connect(true)};
+$('gd-btn').onclick=()=>{if(linked&&ready()){setSync('同步中…');pullAndMerge().catch(()=>setSync('Drive 同步失敗，資料仍在本機'))}else connect(true)};
+$('gd-off').onclick=()=>{
+  try{if(tok&&window.google)google.accounts.oauth2.revoke(tok)}catch(e){}
+  tok=null;linked=false;fid=null;try{localStorage.removeItem('dt-linked'+ENV)}catch(e){}
+  setSync('本機儲存（已中斷 Google Drive）');updUI();
+};
+async function importMain(){
+  const b=$('gd-main'),m=$('gd-main-msg'),sel=$('gd-src'),fn=sel.value,lab=sel.options[sel.selectedIndex].textContent;
+  const label='匯入選取版本的資料';
+  m.style.display='block';
+  if(!ready()){m.textContent='請先連線 Google Drive（上面的按鈕），再按這個。';return}
+  if(!b.dataset.c){b.dataset.c=1;b.textContent='會取代目前同步版資料，再按一次確認';m.textContent='';setTimeout(()=>{b.dataset.c='';b.textContent=label},4000);return}
+  b.dataset.c='';b.textContent='匯入中…';m.textContent='';
+  try{
+    const r=await gfetch('https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&fields=files(id)&q='+encodeURIComponent("name='"+fn+"'"));
+    const j=await r.json(),id=j.files&&j.files[0]&&j.files[0].id;
+    if(!id){m.textContent='在你的 Drive 找不到「'+lab+'」的備份檔（'+fn+'）。請先在那個版本連線並同步一次。';return}
+    const d=await (await gfetch('https://www.googleapis.com/drive/v3/files/'+id+'?alt=media')).json();
+    if(!d||!Array.isArray(d.entries))throw new Error('備份格式不符');
+    S={entries:d.entries,hl:Number(d.hl)||120,h:Number(d.h)||0,tw:Number(d.tw)||0,ts:Date.now()};
+    save();
+    $('hl').value=S.hl;$('h').value=S.h||'';$('tw').value=S.tw||'';render();
+    if($('p-chart').classList.contains('on'))drawCharts();
+    const nd=S.entries.filter(e=>e.dose>0).length;
+    m.textContent='已從「'+lab+'」匯入 '+S.entries.length+' 筆記錄（其中注射 '+nd+' 次）。這是複製，原本版本的備份不受影響。';
+  }catch(e){m.textContent='匯入失敗：'+(e&&e.message?e.message:e)+'。若顯示 auth，請重新連線後再試。'}
+  finally{b.textContent=label}
+}
+$('gd-main').onclick=importMain;
+updUI();
+if(linked)setSync('Google Drive 已連結，連線中…');
+window.addEventListener('load',()=>{if(linked)connect(false)});
+const APP_VERSION='2.0.0';
+$('ver').textContent='版本 '+APP_VERSION;
+$('betatag').style.display='';$('ver').textContent+='（同步版）';
+let updShown=false;
+async function checkUpdate(){
+  if(updShown||!/^https?:/.test(location.protocol))return;
+  try{
+    const u=new URL('index.html',location.href);u.search='';u.hash='';
+    const r=await fetch(u.href+'?t='+Date.now(),{cache:'no-store'});
+    if(!r.ok)return;
+    const m=(await r.text()).match(/APP_VERSION='(\d+\.\d+\.\d+)'/);
+    if(m&&m[1]!==APP_VERSION){updShown=true;$('nv').textContent=m[1];$('upd').style.display='block'}
+  }catch(e){}
+}
+$('cancel-edit').onclick=cancelEdit;
+let askTmr=null;
+function askBkSoon(){clearTimeout(askTmr);askTmr=setTimeout(askBk,700)}
+function askBk(){
+  try{
+    if(LS.get('dt-askbk','1')!=='1')return;
+    if($('om-bk').style.display==='block')return;
+    if(linked&&ready())return;
+    $('bk-ask-t').textContent=linked?'資料已更新，但 Google Drive 需要重新連線。要現在備份嗎？':'資料已更新。要備份到 Google Drive 嗎？';
+    $('bk-ask-yes').textContent=linked?'重新連線並備份':'連線並備份';
+    $('bk-ask').style.display='block';
+  }catch(e){}
+}
+$('bk-ask-yes').onclick=()=>{$('bk-ask').style.display='none';connect(true)};
+$('bk-ask-no').onclick=()=>{$('bk-ask').style.display='none'};
+$('askbk').value=LS.get('dt-askbk','1');
+$('askbk').onchange=()=>{LS.set('dt-askbk',$('askbk').value);if($('askbk').value!=='1')$('bk-ask').style.display='none'};
+$('theme').value=LS.get('dt-theme','auto');
+$('theme').onchange=()=>{LS.set('dt-theme',$('theme').value);applyTheme();if($('p-chart').classList.contains('on'))drawCharts()};
+$('bkdays').value=LS.get('dt-bkdays','7');
+$('bkdays').onchange=()=>{LS.set('dt-bkdays',$('bkdays').value);updBk()};
+$('bk-skip').onclick=()=>{LS.set('dt-bkhide'+ENV,today());updBk()};
+$('bk-go').onclick=()=>{
+  if(linked&&ready()){$('gd-btn').onclick();return}
+  if(linked){connect(true);return}
+  const t=document.querySelector('.tabs button[data-t="set"]');if(t)t.click();
+  setTimeout(()=>{try{$('gd-btn').scrollIntoView({behavior:'smooth',block:'center'})}catch(e){}},50);
+};
+
+/* ---------- Omron CSV import ---------- */
+const OM_COLS={date:[/測量日期|日期|日時|date/i],time:[/^時間$|^time$/i],sys:[/收縮壓|systolic/i],dia:[/舒張壓|diastolic/i],pul:[/脈搏|pulse|bpm/i],irr:[/檢測到不規則脈波|irregular/i],mov:[/身體晃動|body movement/i],wt:[/體重|weight/i],fat:[/體脂|body fat/i],mus:[/骨骼肌|skeletal/i],vis:[/內臟脂肪|visceral/i],bage:[/身體年齡|體年齡|body age/i],bmr:[/基礎代謝|靜止代謝|resting metabolism|basal metabolic|bmr/i]};
+function parseCSV(t){
+  t=t.replace(/^\uFEFF/,'');
+  const first=t.split(/\r?\n/,1)[0]||'';
+  const d=first.split('\t').length>first.split(',').length?'\t':',';
+  const rows=[];let row=[],f='',q=false;
+  for(let i=0;i<t.length;i++){
+    const c=t[i];
+    if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++}else q=false}else f+=c}
+    else if(c==='"')q=true;
+    else if(c===d){row.push(f);f=''}
+    else if(c==='\n'){row.push(f);rows.push(row);row=[];f=''}
+    else if(c!=='\r')f+=c;
+  }
+  if(f!==''||row.length){row.push(f);rows.push(row)}
+  return rows.filter(r=>r.some(x=>x.trim()!==''));
+}
+function omMap(hdr){
+  const h={},used=new Set();
+  for(const k of Object.keys(OM_COLS)){
+    const c=[];
+    hdr.forEach((t,i)=>{if(!used.has(i)&&OM_COLS[k].some(re=>re.test(t)))c.push(i)});
+    let pick=c[0];
+    if(c.length>1&&(k==='fat'||k==='mus')){const pr=c.find(i=>/率|%/.test(hdr[i]));if(pr!==undefined)pick=pr}
+    h[k]=pick===undefined?-1:pick;
+    if(pick!==undefined)used.add(pick);
+  }
+  return h;
+}
+function omRecord(h,hdr,r){
+  const g=k=>h[k]>=0?String(r[h[k]]||'').trim():'';
+  const num=k=>{const v=parseFloat(g(k).replace(/[^0-9.]/g,''));return v>0?v:0};
+  const dm=g('date').match(/(\d{4})[\/\-.](\d{1,2})[\/\-.](\d{1,2})(?:[ T]+(\d{1,2}):(\d{2}))?/);
+  if(!dm)return null;
+  let hh=dm[4],mm=dm[5];
+  if(hh===undefined&&h.time>=0){const tm=g('time').match(/(\d{1,2}):(\d{2})/);if(tm){hh=tm[1];mm=tm[2]}}
+  const rec={date:dm[1]+'-'+pad(+dm[2])+'-'+pad(+dm[3]),sys:num('sys'),dia:num('dia'),pul:num('pul'),wt:num('wt'),fat:num('fat'),mus:num('mus'),vis:num('vis'),bage:num('bage'),bmr:num('bmr')};
+  if(rec.wt>0&&h.wt>=0&&/lb|磅/i.test(hdr[h.wt]))rec.wt=+(rec.wt*0.45359237).toFixed(1);
+  if((rec.sys>0)!==(rec.dia>0)){rec.sys=0;rec.dia=0}
+  if(!(rec.sys>0||rec.pul>0||rec.wt>0||rec.fat>0||rec.mus>0||rec.vis>0||rec.bage>0||rec.bmr>0))return null;
+  const fl=[];
+  if(/已偵測|^(detected|yes|true)$/i.test(g('irr')))fl.push('偵測到不規則脈波');
+  if(/已偵測|^(detected|yes|true)$/i.test(g('mov')))fl.push('偵測到身體晃動');
+  rec.note=[hh!==undefined?pad(+hh)+':'+mm:''].concat(fl).filter(Boolean).join('，');
+  return rec;
+}
+const omTime=e=>{const m=(e.note||'').match(/^(\d{1,2}):(\d{2})/);return m?pad(+m[1])+':'+m[2]:''};
+const omKey=e=>(+e.sys>0&&+e.dia>0)?[e.date,'bp',+e.sys,+e.dia,omTime(e)].join('|'):[e.date,+e.sys||0,+e.dia||0,+e.pul||0,+e.wt||0,+e.fat||0,+e.mus||0,+e.vis||0,+e.bage||0,+e.bmr||0,omTime(e)].join('|');
+const omMin=t=>t?+t.slice(0,2)*60+ +t.slice(3,5):-1;
+function omPlanRec(rec,st,ctx){
+  if(!st.from||rec.date<st.from)st.from=rec.date;
+  if(!st.to||rec.date>st.to)st.to=rec.date;
+  const k=omKey(rec);
+  if(ctx.seen.has(k)){st.dup++;return}
+  if(rec.sys>0){
+    const tm=omMin(omTime(rec));
+    if(tm>=0&&S.entries.some(e=>e.date===rec.date&&e.sys===rec.sys&&e.dia===rec.dia&&omMin(omTime(e))>=0&&Math.abs(omMin(omTime(e))-tm)<=2)){ctx.seen.add(k);st.dup++;return}
+  }else if(!(rec.wt>0)&&(rec.fat>0||rec.bmr>0)){
+    if(S.entries.some(e=>e.date===rec.date&&((rec.fat>0&&Math.abs((e.fat||0)-rec.fat)<0.05)||(rec.bmr>0&&e.bmr===rec.bmr)))){ctx.seen.add(k);st.dup++;return}
+  }
+  if(!(rec.sys>0)&&rec.wt>0){
+    const ex=S.entries.find(e=>e.date===rec.date&&e.wt>0&&Math.abs(e.wt-rec.wt)<0.05&&!(e.sys>0));
+    if(ex){
+      const fill={};['fat','mus','vis','bage','bmr'].forEach(q=>{if(!(ex[q]>0)&&rec[q]>0)fill[q]=rec[q]});
+      ctx.seen.add(k);
+      if(Object.keys(fill).length){ctx.merges.push({id:ex.id,fill});st.merged++}else st.dup++;
+      return;
+    }
+  }
+  ctx.seen.add(k);ctx.toAdd.push(rec);st.added++;
+}
+async function omBuild(files){
+  const seen=new Set(S.entries.map(omKey)),toAdd=[],merges=[],info=[],ctx={seen,toAdd,merges};
+  for(const f of files){
+    const st={name:f.name,type:'',added:0,merged:0,dup:0,skipped:0,from:'',to:'',err:''};
+    const rows=parseCSV(await f.text());
+    if(rows.length<2){st.err='檔案是空的或只有標題列。';info.push(st);continue}
+    const hdr=rows[0].map(x=>x.trim()),h=omMap(hdr);
+    const bp=h.sys>=0&&h.dia>=0,body=['wt','fat','mus','vis','bage','bmr'].some(k=>h[k]>=0);
+    if(h.date<0||!(bp||body)){st.err='無法辨識欄位，標題列是：'+hdr.join(' | ');info.push(st);continue}
+    st.type=bp&&body?'血壓與體組成':bp?'血壓':'體重／體組成';
+    for(const r of rows.slice(1)){
+      const rec=omRecord(h,hdr,r);
+      if(!rec){st.skipped++;continue}
+      omPlanRec(rec,st,ctx);
+    }
+    info.push(st);
+  }
+  return {toAdd,merges,info};
+}
+function omApply(plan){
+  try{localStorage.setItem(K+'-undo',JSON.stringify(S))}catch(e){}
+  let id=Math.max(0,...S.entries.map(e=>e.id||0));
+  plan.merges.forEach(m=>{const e=S.entries.find(z=>z.id===m.id);if(e)Object.assign(e,m.fill)});
+  plan.toAdd.forEach(r=>{id++;S.entries.push(Object.assign({id,dose:0,site:''},r))});
+  save();render();
+  if($('p-chart').classList.contains('on'))drawCharts();
+}
+function omUndoUI(){try{$('om-undo').style.display=localStorage.getItem(K+'-undo')?'block':'none'}catch(e){}}
+let omPlanData=null;
+/* ---------- Health Connect（僅 Android APK，需要原生外掛） ---------- */
+let hcErr='';
+function hcAndroid(){try{const C=window.Capacitor;if(!C)return false;return C.isNativePlatform?!!C.isNativePlatform():(C.getPlatform?C.getPlatform()!=='web':false)}catch(e){return false}}
+function hcPlugin(){
+  hcErr='';
+  try{
+    const C=window.Capacitor;
+    if(!C){hcErr='找不到 Capacitor';return null}
+    if(!hcAndroid()){hcErr='不是原生平台';return null}
+    if(C.Plugins&&C.Plugins.Health)return C.Plugins.Health;
+    if(C.registerPlugin)return C.registerPlugin('Health');
+    hcErr='沒有 registerPlugin';
+  }catch(e){hcErr='取得外掛時發生錯誤：'+(e&&e.message?e.message:e)}
+  return null;
+}
+function hcInfo(){try{const C=window.Capacitor;if(!C)return '診斷：找不到 Capacitor（目前是一般網頁，不是 APK 外殼，或外殼沒有注入橋接程式）。';return '診斷：Capacitor 存在；平台 '+(C.getPlatform?C.getPlatform():'?')+'；原生 '+(C.isNativePlatform?C.isNativePlatform():'?')+'；Health 外掛 '+(C.isPluginAvailable?C.isPluginAvailable('Health'):'?')+(hcErr?'；'+hcErr:'')+'。'}catch(e){return '診斷失敗：'+e.message}}
+function omShow(plan){
+  $('om-bk').style.display='none';
+  const out=$('om-sum');out.textContent='';
+  plan.info.forEach(st=>{
+    const d=document.createElement('div');
+    d.textContent=st.err?'「'+st.name+'」：'+st.err:'「'+st.name+'」：'+st.type+'，新增 '+st.added+(st.merged?'、補充既有體重 '+st.merged:'')+'、重複略過 '+st.dup+(st.from?'（'+st.from+' 到 '+st.to+'）':'');
+    out.appendChild(d);
+  });
+  $('om-go').style.display=(plan.toAdd.length+plan.merges.length)?'block':'none';
+}
+async function hcSync(){
+  const H=hcPlugin(),out=$('om-sum'),line=t=>{const d=document.createElement('div');d.textContent=t;out.appendChild(d)};
+  if(!H){out.textContent='無法取得 Health Connect 外掛。'+(hcErr?hcErr+'。':'這個功能只能在 Android APK 中使用。');return}
+  const days=+$('hc-days').value||30,allSrc=$('hc-all').checked,errs=[];
+  out.textContent='正在連線 Health Connect…';$('om-go').style.display='none';omPlanData=null;
+  try{
+    const av=await H.isAvailable();
+    if(!av||!av.available){out.textContent='此裝置無法使用 Health Connect：'+((av&&av.reason)||'未安裝或不支援')+'。';return}
+    const types=['weight','bodyFat','bloodPressure','basalCalories','heartRate'];
+    const au=await H.requestAuthorization({read:types,write:[],requestHistoryAccess:days>30});
+    const denied=(au&&au.readDenied)||[];
+    const start=new Date(Date.now()-days*864e5).toISOString(),end=new Date().toISOString();
+    const get=async t=>{
+      if(denied.includes(t))return [];
+      try{const r=await H.readSamples({dataType:t,startDate:start,endDate:end,limit:5000,ascending:true});return r.samples||[]}
+      catch(e){errs.push(t+'：'+(e&&e.message?e.message:e));return []}
+    };
+    const w=await get('weight'),f=await get('bodyFat'),bp=await get('bloodPressure'),bm=await get('basalCalories'),hr=await get('heartRate');
+    const src={};[].concat(w,f,bp,bm,hr).forEach(s=>{const k=s.sourceName||s.sourceId||'未知來源';src[k]=(src[k]||0)+1});
+    const isOm=s=>allSrc||/omron/i.test((s.sourceId||'')+' '+(s.sourceName||''));
+    const loc=iso=>{const d=new Date(iso);return {date:d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()),time:pad(d.getHours())+':'+pad(d.getMinutes()),t:d.getTime()}};
+    const blank=(l)=>({date:l.date,sys:0,dia:0,pul:0,wt:0,fat:0,mus:0,vis:0,bage:0,bmr:0,note:l.time});
+    const recs=[],hrs=hr.filter(isOm);
+    bp.filter(isOm).forEach(s=>{
+      const l=loc(s.startDate),sy=Math.round(+s.systolic||0),di=Math.round(+s.diastolic||0);
+      if(!(sy>0&&di>0))return;
+      let pul=0,best=1e9;hrs.forEach(h=>{const dt=Math.abs(new Date(h.startDate).getTime()-l.t);if(dt<=120000&&dt<best){best=dt;pul=Math.round(+h.value||0)}});
+      const r=blank(l);r.sys=sy;r.dia=di;r.pul=pul;recs.push(r);
+    });
+    const body={},slot=s=>{const l=loc(s.startDate);return body[l.date+' '+l.time]||(body[l.date+' '+l.time]=blank(l))};
+    w.filter(isOm).forEach(s=>{if(s.value>0)slot(s).wt=+(+s.value).toFixed(1)});
+    f.filter(isOm).forEach(s=>{if(s.value>0)slot(s).fat=+(+s.value).toFixed(1)});
+    bm.filter(isOm).forEach(s=>{if(s.value>0)slot(s).bmr=Math.round(+s.value)});
+    const bl=Object.values(body).sort((a,b)=>(a.date+a.note<b.date+b.note?-1:1));
+    bl.filter(r=>!(r.wt>0)).forEach(r=>{
+      const t=bl.find(x=>x.wt>0&&x.date===r.date&&Math.abs(omMin(x.note)-omMin(r.note))<=2);
+      if(t){['fat','bmr'].forEach(k=>{if(!(t[k]>0))t[k]=r[k]});r._m=1}
+    });
+    bl.filter(r=>!r._m).forEach(r=>recs.push(r));
+    recs.sort((a,b)=>(a.date+a.note<b.date+b.note?-1:1));
+    const st={name:'Health Connect（最近 '+days+' 天）',type:'血壓／體重／體組成',added:0,merged:0,dup:0,skipped:0,from:'',to:'',err:''};
+    const ctx={seen:new Set(S.entries.map(omKey)),toAdd:[],merges:[]};
+    recs.forEach(r=>omPlanRec(r,st,ctx));
+    omPlanData={toAdd:ctx.toAdd,merges:ctx.merges,info:[st]};
+    if(!recs.length)st.err='沒有找到'+(allSrc?'':' Omron ')+'的資料。';
+    omShow(omPlanData);
+    const names=Object.keys(src).map(k=>k+' '+src[k]+' 筆').join('、');
+    line('Health Connect 內找到的來源：'+(names||'無')+'。');
+    if(denied.length)line('未授權的項目：'+denied.join('、')+'。');
+    if(days>30&&au&&au.historyAccessAuthorized===false)line('沒有取得歷史資料權限，Health Connect 只會提供大約 30 天內的資料。');
+    errs.forEach(e=>line('讀取失敗：'+e));
+    line('骨骼肌、內臟脂肪、身體年齡不在 Health Connect 中，請另外匯入 Omron CSV。');
+  }catch(e){out.textContent='Health Connect 同步失敗：'+(e&&e.message?e.message:e)+'。如果訊息提到外掛未實作，代表這個 APK 尚未包含 Health Connect 外掛，請依 README 重新建置。'}
+}
+function hcInit(){
+  let ok=false;
+  try{const C=window.Capacitor;ok=!!hcPlugin()||(hcAndroid()&&C.isPluginAvailable&&C.isPluginAvailable('Health'))}catch(e){hcErr='初始化錯誤：'+e.message}
+  if(ok){$('hc-box').style.display='block';$('hc-btn').onclick=hcSync;$('hc-diag').style.display='none';return true}
+  if(/Android/i.test(navigator.userAgent||'')){$('hc-diag').textContent=hcInfo();$('hc-diag').style.display='block'}
+  return false;
+}
+if(!hcInit()){window.addEventListener('load',()=>{hcInit()||setTimeout(hcInit,1500)})}
+$('om-file').onchange=async ev=>{
+  const files=[...(ev.target.files||[])];
+  $('om-sum').textContent='';omPlanData=null;$('om-go').style.display='none';
+  if(!files.length)return;
+  try{
+    omPlanData=await omBuild(files);
+    omPlanData.info.forEach(st=>{
+      const d=document.createElement('div');
+      d.textContent=st.err?'「'+st.name+'」：'+st.err:'「'+st.name+'」：'+st.type+'，新增 '+st.added+(st.merged?'、補充既有體重 '+st.merged:'')+'、重複略過 '+st.dup+(st.skipped?'、無法讀取 '+st.skipped:'')+(st.from?'（'+st.from+' 到 '+st.to+'）':'');
+      $('om-sum').appendChild(d);
+    });
+    const n=omPlanData.toAdd.length+omPlanData.merges.length;
+    if(n)$('om-go').style.display='block';
+    else{const d=document.createElement('div');d.textContent='沒有可匯入的新資料。';$('om-sum').appendChild(d)}
+  }catch(e){$('om-sum').textContent='讀取檔案失敗：'+(e&&e.message?e.message:e)}
+};
+$('om-go').onclick=()=>{
+  if(!omPlanData)return;
+  const n=omPlanData.toAdd.length,m=omPlanData.merges.length;
+  omApply(omPlanData);omPlanData=null;
+  $('om-go').style.display='none';$('om-file').value='';
+  $('om-sum').textContent='已匯入 '+n+' 筆新記錄'+(m?'，並補充 '+m+' 筆既有體重的體組成數值':'')+'。匯入有誤可按「復原上次匯入」。';
+  omUndoUI();
+  omAskBackup();
+};
+function omAskBackup(){
+  const t=$('om-bk-t'),yes=$('om-bk-yes'),no=$('om-bk-no');
+  if(linked&&ready()){t.textContent='正在自動備份到 Google Drive，請看畫面上方的同步狀態。';yes.style.display='none';no.textContent='知道了'}
+  else{t.textContent=linked?'Google Drive 需要重新連線。要現在重新連線並備份嗎？':'要把這些資料備份到 Google Drive 嗎？';yes.style.display='';yes.textContent=linked?'重新連線並備份':'連線並備份到 Google Drive';no.textContent='先不要'}
+  $('om-bk').style.display='block';
+}
+$('om-bk-yes').onclick=()=>{$('om-bk').style.display='none';connect(true)};
+$('om-bk-no').onclick=()=>{$('om-bk').style.display='none'};
+$('om-undo').onclick=()=>{
+  try{
+    const raw=localStorage.getItem(K+'-undo');if(!raw)return;
+    const p=JSON.parse(raw);if(!p||!Array.isArray(p.entries))return;
+    S=p;save();localStorage.removeItem(K+'-undo');
+    $('hl').value=S.hl;$('h').value=S.h||'';$('tw').value=S.tw||'';
+    render();if($('p-chart').classList.contains('on'))drawCharts();
+    $('om-sum').textContent='已復原到匯入前的狀態。';
+  }catch(e){$('om-sum').textContent='復原失敗。'}
+  omUndoUI();
+};
+omUndoUI();
+
+$('bk-file').onchange=async ev=>{
+  const f=ev.target.files&&ev.target.files[0];if(!f)return;
+  try{$('bk').value=await f.text();$('bmsg').textContent='已讀入「'+f.name+'」，確認後按「從文字還原」。'}
+  catch(e){$('bmsg').textContent='讀取檔案失敗。'}
+};
+$('f-more').ontoggle=()=>{moreTouched=true};
+$('ai-copy').onclick=async()=>{
+  const t=$('ai-prompt');
+  try{await navigator.clipboard.writeText(t.value)}catch(e){t.select();try{document.execCommand('copy')}catch(e2){}}
+  $('ai-copy').textContent='已複製';setTimeout(()=>$('ai-copy').textContent='複製提示詞',1500);
+};
+$('upd').onclick=()=>{location.replace(location.pathname+'?v='+Date.now())};
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkUpdate()});
+window.addEventListener('load',()=>setTimeout(checkUpdate,1500));
+$('add').onclick=()=>{
+  const date=$('f-date').value,dose=parseFloat($('f-dose').value)||0,wt=parseFloat($('f-wt').value)||0,num=id=>parseFloat($('f-'+id).value)||0,sys=num('sys'),dia=num('dia'),pul=num('pul'),fat=num('fat'),mus=num('mus'),vis=num('vis'),bage=num('bage'),bmr=num('bmr');
+  if(!date){$('msg').textContent='請選擇日期。';return}
+  if((sys>0)!==(dia>0)){$('msg').textContent='血壓請同時輸入收縮壓和舒張壓。';return}
+  if(!(dose>0||wt>0||sys>0||pul>0||fat>0||mus>0||vis>0||bage>0||bmr>0)){$('msg').textContent='請至少輸入一項數值（劑量、體重、血壓、體組成等）。';return}
+  const rec={date,dose,wt,sys,dia,pul,fat,mus,vis,bage,bmr,site:dose>0?$('f-site').value:'',note:$('f-note').value.trim()};
+  const was=editId!==null;
+  const t=was?S.entries.find(z=>z.id===editId):null;
+  if(t)Object.assign(t,rec);else S.entries.push(Object.assign({id:Date.now()},rec));
+  cancelEdit();
+  save();$('f-dose').value='';$('f-wt').value='';$('f-note').value='';
+  $('msg').textContent=was?'已更新。':'已儲存。';render();
+};
+$('hl').value=S.hl;
+$('h').value=S.h||'';$('tw').value=S.tw||'';
+$('save-prof').onclick=()=>{S.h=parseFloat($('h').value)||0;S.tw=parseFloat($('tw').value)||0;save();render();$('save-prof').textContent='已儲存';setTimeout(()=>$('save-prof').textContent='儲存身高與目標',1500)};
+$('save-hl').onclick=()=>{const v=parseFloat($('hl').value);if(v>0){S.hl=v;save();render();$('save-hl').textContent='已儲存';setTimeout(()=>$('save-hl').textContent='儲存半衰期',1500)}};
+$('exp').onclick=()=>{bkMark();$('bk').value=JSON.stringify(S);$('bk').select();$('bmsg').textContent='請全選複製，貼到備忘錄或傳給自己保存。'};
+$('imp').onclick=()=>{
+  try{const p=JSON.parse($('bk').value.replace(/```(json)?/g,'').trim());if(!p||!Array.isArray(p.entries))throw 0;
+    S={entries:p.entries.filter(e=>e&&typeof e.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(e.date)).map((e,i)=>({id:e.id||Date.now()+i,date:e.date,dose:+e.dose||0,wt:+e.wt||0,sys:+e.sys||0,dia:+e.dia||0,pul:+e.pul||0,fat:+e.fat||0,mus:+e.mus||0,vis:+e.vis||0,bage:+e.bage||0,bmr:+e.bmr||0,note:String(e.note||''),site:SITES.includes(e.site)?e.site:''})),hl:Number(p.hl)||120,h:Number(p.h)||0,tw:Number(p.tw)||0};
+    save();$('hl').value=S.hl;$('h').value=S.h||'';$('tw').value=S.tw||'';render();$('bmsg').textContent='已還原 '+S.entries.length+' 筆記錄'+(p.entries.length>S.entries.length?'，略過 '+(p.entries.length-S.entries.length)+' 筆日期格式不正確的記錄':'')+'。'}
+  catch(e){$('bmsg').textContent='格式不正確，請貼上完整的備份文字。'}
+};
+render();
+</script>
+</body>
+</html>
