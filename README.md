@@ -1,5 +1,7 @@
 # 注射與體重記錄 同步版 Dose Tracker Sync
 
+**繁體中文** ｜ [English](README.en.md) ｜ [日本語](README.ja.md)
+
 一個在手機上使用的單頁網頁 app，用來記錄每週注射劑量、注射部位與體重，並畫出圖表。所有功能都在一個 `index.html` 檔案裡，不需要安裝、不需要伺服器。
 
 **線上使用：** https://killnopig.github.io/dose-tracker-sync/
@@ -35,9 +37,9 @@
 
 ## Android APK（選用）
 
-除了「加到主畫面」，也可以安裝 Android APK：到 [Releases](https://github.com/killnopig/dose-tracker-sync/releases) 下載最新的 `dose-tracker-v1.0.0.apk`。
+除了「加到主畫面」，也可以安裝 Android APK：到 [Releases](https://github.com/killnopig/dose-tracker-sync/releases) 下載最新的 `dose-tracker-sync-v2.0.0.apk`。
 
-- APK 只是載入 `https://killnopig.github.io/dose-tracker-sync/` 的外殼（Capacitor）。網站更新時 app 內容會自動跟著更新，不需要重新安裝；實際版本以 app 最底下顯示的版本號為準。
+- APK 只是載入 `https://killnopig.github.io/dose-tracker-sync/` 的外殼（Capacitor）。網站更新時 app 內容會自動跟著更新，不需要重新安裝；實際版本以 app 最上方標題旁顯示的版本號為準。
 - 需要網路才能開啟，沒有網路時無法載入。
 - 資料存在 APK 內嵌的瀏覽器，與 Chrome 網頁版分開。解除安裝或清除 app 資料會遺失記錄，請定期在「設定」按「產生備份文字」另存。
 - Google Drive 備份在作者的手機上測試可正常使用，其他機型未測。
@@ -202,7 +204,7 @@
 
 ## 版本與自動更新
 
-- 目前版本顯示在 app 最底下，版本號定義在 `index.html` 裡的 `APP_VERSION`。
+- 目前版本顯示在 app 最上方標題旁，版本號定義在 `index.html` 裡的 `APP_VERSION`。
 - 版本號遵循 `主版本.次版本.修補版本`：修錯字或小問題升修補版本（1.0.1），新增功能升次版本（1.1.0），資料格式有不相容的改動才升主版本（2.0.0）。
 - 每次打開 app 或從背景切回來時，app 會比對線上 `index.html` 的版本號。若不同，頁面上方會出現「有新版本，點此更新」，點一下即重新載入。
 - 發布新版時，記得先把 `APP_VERSION` 改成新版號，再上傳 `index.html`，否則使用者不會收到更新提示。
@@ -314,7 +316,7 @@
 - 1.2 穩定版維持在 [dose-tracker](https://github.com/killnopig/dose-tracker)，網址 `https://killnopig.github.io/dose-tracker/`，不再加入新功能。
 - 同步版是獨立專案，網址 `https://killnopig.github.io/dose-tracker-sync/`，版本號從 2.0.0 開始。
 - 兩者在同一個網域下，所以同步版固定使用自己的本機儲存鍵（`dosetrack-v1-sync`）與 Google Drive 備份檔（`dose-tracker-sync.json`），不會讀寫 1.2 版的資料。
-- 從 1.2 版或舊測試版搬資料：到同步版「設定」→ Google Drive，連線後選「從其他版本匯入資料」，選來源再按「匯入選取版本的資料」。這是複製，原本版本的備份不受影響。
+- 從 1.2 版或舊測試版搬資料：到同步版「設定」→ Google Drive，連線 Google Drive 後，若同步版自己的備份是空的、本機也沒有資料，會自動從舊測試版或 1.2 版的雲端備份載入（挑較新的一份）。這是複製，原本版本的備份不受影響。
 - Google 登入同意畫面與 Health Connect 授權畫面的隱私權政策，沿用 1.2 專案的 `privacy.html`。
 
 ## 授權
