@@ -2,6 +2,8 @@
 
 **繁體中文** ｜ [English](README.en.md) ｜ [日本語](README.ja.md)
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-%E8%AB%8B%E6%88%91%E5%96%9D%E6%9D%AF%E5%92%96%E5%95%A1-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/killnopig)
+
 一個在手機上使用的單頁網頁 app，用來記錄每週注射劑量、注射部位與體重，並畫出圖表。所有功能都在一個 `index.html` 檔案裡，不需要安裝、不需要伺服器。
 
 **線上使用：** https://killnopig.github.io/dose-tracker-sync/
@@ -210,6 +212,9 @@
 - 發布新版時，記得先把 `APP_VERSION` 改成新版號，再上傳 `index.html`，否則使用者不會收到更新提示。
 
 ## 版本紀錄
+
+### 2.0.3（2026-11-11）
+- 設定頁最底下加一行自願贊助連結（Ko-fi），不影響任何功能。
 
 ### 2.0.2（2026-11-11）
 - 移除設定頁的「從其他版本匯入資料」區塊（連線後已會自動載入舊備份）。

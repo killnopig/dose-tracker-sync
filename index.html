@@ -236,6 +236,7 @@ button.x{width:auto;margin:0;padding:6px 10px;background:transparent;color:var(-
       <button id="ai-copy" class="sec">複製提示詞</button>
     </details>
   </div>
+  <p class="note" style="text-align:center;margin:18px 0 6px">覺得好用？<a href="https://ko-fi.com/killnopig" target="_blank" rel="noopener" style="color:var(--dose)">請我喝杯咖啡</a>（自願，不影響任何功能）</p>
 </section>
 <details class="card" style="margin-top:16px">
   <summary style="cursor:pointer;font-weight:600">關於本 app 與免責聲明</summary>
@@ -863,7 +864,7 @@ $('gd-off').onclick=()=>{
 updUI();
 if(linked)setSync('Google Drive 已連結，連線中…');
 window.addEventListener('load',()=>{if(linked)connect(false)});
-const APP_VERSION='2.0.2';
+const APP_VERSION='2.0.3';
 $('ver').textContent='版本 '+APP_VERSION;
 $('betatag').style.display='';$('ver').textContent+='（同步版）';
 let updShown=false;

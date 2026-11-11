@@ -2,6 +2,8 @@
 
 [繁體中文](README.md) ｜ **English** ｜ [日本語](README.ja.md)
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20me%20a%20coffee-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/killnopig)
+
 A single-page web app for your phone that records weekly injection doses, injection sites, weight and related health measurements, and draws charts. Everything lives in one `index.html` file. No server is needed.
 
 **Use it online:** https://killnopig.github.io/dose-tracker-sync/

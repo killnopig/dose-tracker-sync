@@ -2,6 +2,8 @@
 
 [繁體中文](README.md) ｜ [English](README.en.md) ｜ **日本語**
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%82%92%E3%81%94%E3%81%A1%E3%81%9D%E3%81%86-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/killnopig)
+
 毎週の注射量、注射部位、体重などの健康データを記録し、グラフにするスマートフォン向けのシングルページ Web アプリです。すべての機能が `index.html` 1 ファイルに入っており、サーバーは不要です。
 
 **オンラインで使う:** https://killnopig.github.io/dose-tracker-sync/
