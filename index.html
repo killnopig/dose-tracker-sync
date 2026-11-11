@@ -803,18 +803,43 @@ async function pushRemote(){
   }catch(e){setSync('Drive 備份失敗，資料仍在本機（點此重新連線）');toast('✗ 備份失敗，資料仍在本機',true)}
 }
 function schedPush(){if(!linked)return;setSync('同步中…');clearTimeout(tmr);tmr=setTimeout(pushRemote,800)}
+async function legacyLoad(){
+  let best=null;
+  for(const [fn,lab] of [['dose-tracker-beta.json','舊測試版'],['dose-tracker.json','1.2 版']]){
+    try{
+      const r=await gfetch('https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&fields=files(id)&q='+encodeURIComponent("name='"+fn+"'"));
+      const j=await r.json(),id=j.files&&j.files[0]&&j.files[0].id;if(!id)continue;
+      const d=await (await gfetch('https://www.googleapis.com/drive/v3/files/'+id+'?alt=media')).json();
+      if(d&&Array.isArray(d.entries)&&d.entries.length&&(!best||(d.ts||0)>(best.d.ts||0)))best={d,lab};
+    }catch(e){}
+  }
+  if(!best)return false;
+  const d=best.d;
+  S={entries:d.entries,hl:Number(d.hl)||120,h:Number(d.h)||0,tw:Number(d.tw)||0,ts:Date.now()};
+  save();
+  $('hl').value=S.hl;$('h').value=S.h||'';$('tw').value=S.tw||'';render();
+  if($('p-chart').classList.contains('on'))drawCharts();
+  setSync('已從「'+best.lab+'」載入 '+S.entries.length+' 筆');
+  toast('已從「'+best.lab+'」載入 '+S.entries.length+' 筆記錄');
+  return true;
+}
 async function pullAndMerge(){
   await findFile();
+  let remoteN=0;
   if(fid){
     const r=await gfetch('https://www.googleapis.com/drive/v3/files/'+fid+'?alt=media');
     const d=await r.json();
-    if(d&&Array.isArray(d.entries)&&(d.ts||0)>(S.ts||0)){
+    remoteN=d&&Array.isArray(d.entries)?d.entries.length:0;
+    if(d&&Array.isArray(d.entries)&&(d.ts||0)>(S.ts||0)&&(remoteN>0||!S.entries.length)){
       S={entries:d.entries,hl:Number(d.hl)||120,h:Number(d.h)||0,tw:Number(d.tw)||0,ts:d.ts};
       try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}
       $('hl').value=S.hl;$('h').value=S.h||'';$('tw').value=S.tw||'';render();
       if($('p-chart').classList.contains('on'))drawCharts();
-      setSync('已從 Google Drive 載入');bkMark();return;
+      if(remoteN>0){setSync('已從 Google Drive 載入');bkMark();return}
     }
+  }
+  if(remoteN===0&&!S.entries.length){
+    if(await legacyLoad())return;
   }
   await pushRemote();
 }
@@ -865,7 +890,7 @@ $('gd-main').onclick=importMain;
 updUI();
 if(linked)setSync('Google Drive 已連結，連線中…');
 window.addEventListener('load',()=>{if(linked)connect(false)});
-const APP_VERSION='2.0.0';
+const APP_VERSION='2.0.1';
 $('ver').textContent='版本 '+APP_VERSION;
 $('betatag').style.display='';$('ver').textContent+='（同步版）';
 let updShown=false;
