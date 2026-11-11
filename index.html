@@ -152,10 +152,6 @@ button.x{width:auto;margin:0;padding:6px 10px;background:transparent;color:var(-
     <p class="note">登入你自己的 Google 帳號後，資料會備份到你 Drive 裡的隱藏應用程式資料夾，只有這個網頁能讀寫，作者看不到你的資料。</p>
     <button id="gd-btn">連線 Google Drive</button>
     <button id="gd-off" class="sec" style="display:none">中斷連線</button>
-    <label for="gd-src" style="margin-top:14px">從其他版本匯入資料</label>
-    <select id="gd-src"><option value="dose-tracker.json">1.2 版（正式版）</option><option value="dose-tracker-beta.json">舊測試版（1.9.x）</option></select>
-    <button id="gd-main" class="sec">匯入選取版本的資料</button>
-    <div class="note" id="gd-main-msg" style="display:none;margin-top:8px"></div>
   </div>
   <div class="card">
     <div class="row">
@@ -864,33 +860,10 @@ $('gd-off').onclick=()=>{
   tok=null;linked=false;fid=null;try{localStorage.removeItem('dt-linked'+ENV)}catch(e){}
   setSync('本機儲存（已中斷 Google Drive）');updUI();
 };
-async function importMain(){
-  const b=$('gd-main'),m=$('gd-main-msg'),sel=$('gd-src'),fn=sel.value,lab=sel.options[sel.selectedIndex].textContent;
-  const label='匯入選取版本的資料';
-  m.style.display='block';
-  if(!ready()){m.textContent='請先連線 Google Drive（上面的按鈕），再按這個。';return}
-  if(!b.dataset.c){b.dataset.c=1;b.textContent='會取代目前同步版資料，再按一次確認';m.textContent='';setTimeout(()=>{b.dataset.c='';b.textContent=label},4000);return}
-  b.dataset.c='';b.textContent='匯入中…';m.textContent='';
-  try{
-    const r=await gfetch('https://www.googleapis.com/drive/v3/files?spaces=appDataFolder&fields=files(id)&q='+encodeURIComponent("name='"+fn+"'"));
-    const j=await r.json(),id=j.files&&j.files[0]&&j.files[0].id;
-    if(!id){m.textContent='在你的 Drive 找不到「'+lab+'」的備份檔（'+fn+'）。請先在那個版本連線並同步一次。';return}
-    const d=await (await gfetch('https://www.googleapis.com/drive/v3/files/'+id+'?alt=media')).json();
-    if(!d||!Array.isArray(d.entries))throw new Error('備份格式不符');
-    S={entries:d.entries,hl:Number(d.hl)||120,h:Number(d.h)||0,tw:Number(d.tw)||0,ts:Date.now()};
-    save();
-    $('hl').value=S.hl;$('h').value=S.h||'';$('tw').value=S.tw||'';render();
-    if($('p-chart').classList.contains('on'))drawCharts();
-    const nd=S.entries.filter(e=>e.dose>0).length;
-    m.textContent='已從「'+lab+'」匯入 '+S.entries.length+' 筆記錄（其中注射 '+nd+' 次）。這是複製，原本版本的備份不受影響。';
-  }catch(e){m.textContent='匯入失敗：'+(e&&e.message?e.message:e)+'。若顯示 auth，請重新連線後再試。'}
-  finally{b.textContent=label}
-}
-$('gd-main').onclick=importMain;
 updUI();
 if(linked)setSync('Google Drive 已連結，連線中…');
 window.addEventListener('load',()=>{if(linked)connect(false)});
-const APP_VERSION='2.0.1';
+const APP_VERSION='2.0.2';
 $('ver').textContent='版本 '+APP_VERSION;
 $('betatag').style.display='';$('ver').textContent+='（同步版）';
 let updShown=false;
